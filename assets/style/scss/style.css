@@ -1,3 +1,11 @@
+.header__container {
+  display: flex;
+  gap: 1.5384615385vw;
+  align-items: center;
+}
+.header__img {
+  width: 18.4615384615vw;
+}
 .header__links {
   display: flex;
   gap: 2.5641025641vw;
@@ -20,8 +28,8 @@
   width: 44.5564102564vw;
   height: 7.9487179487vw;
   background-color: #49c43d;
-  color: #fff;
   border-radius: 3.9743589744vw;
+  color: #fff;
   font-size: 4.1025641026vw;
 }
 .header__span {

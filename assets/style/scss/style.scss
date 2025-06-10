@@ -53,6 +53,14 @@ $breakpoints: (
   font-size: vw(16);
 }
 .header {
+  &__container{
+    display: flex;
+    gap: vw(6);
+    align-items: center;
+  }
+  &__img{
+    width: vw(72);
+  }
   &__links {
     display: flex;
     gap: vw(10);
