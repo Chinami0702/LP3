@@ -40,6 +40,11 @@ $breakpoints: (
   }
   @return calc($px * 100vw / $pc-full-width);
 }
+//body
+body{
+  margin: 0;
+  padding: 0;
+}
 //header
 @mixin flex-center($width, $height, $bg-color) {
   display: flex;
@@ -50,10 +55,13 @@ $breakpoints: (
   background-color: $bg-color;
   border-radius: vw(15.5);
   color: #fff;
-  font-size: vw(16);
+  font-size: vw(12);
 }
 .header {
+  padding: vw(13) vw(12);
   &__container{
+    width: vw(369);
+    margin: 0 auto;
     display: flex;
     gap: vw(6);
     align-items: center;
@@ -72,6 +80,62 @@ $breakpoints: (
     @include flex-center(173.77, 31, #49c43d);
   }
   &__span {
-    font-size: vw(13.3);
+    font-size: vw(10);
+  }
+}
+//intro
+.intro{
+  background-color: #fa7da3;
+  padding: vw(0) vw(0) vw(2) vw(3);
+  &__container{
+    // width: vw(350);
+    // margin: 0 0 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: vw(10) vw(0) vw(10) vw(10);
+    color: #fff;
+    font-weight: 400;
+    font-size: vw(42);
+  }
+  &__span{
+    font-size: vw(18);
+  }
+  &__price{
+    background-color: rgba(255, 255,255, 0.3);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: vw(10) vw(23) vw(21) vw(26);
+    width: vw(130);
+  }
+  &__price--top{
+    background-color: #fff;
+    color: #fa7da3;
+    width: vw(47);
+    margin: 0;
+    font-size: vw(13);
+    font-weight: 700;
+    text-align: center;
+  }
+  &__price--bottom{
+    margin: 0;
+    font-size: vw(24);
+    font-weight: 700;
+    color: #fff;
+  }
+  &__price--right{
+    font-size: vw(76);
+    font-weight: 700;
+    color: #fffd7a;
+    margin: 0;
+    line-height: 1;
+  }
+  &__subspan{
+    font-size: vw(36);
   }
 }
