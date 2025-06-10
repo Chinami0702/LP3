@@ -1,0 +1,44 @@
+
+$sp-full-width: 390; 
+$pc-full-width: 1536;
+$pc-content-width: 1100;
+
+$breakpoint-md: 768;
+$breakpoint-lg: $pc-content-width;
+
+$production: 1;
+
+$breakpoints: (
+  "md": "screen and (min-width: #{$breakpoint-md}px)",
+  "lg": "screen and (min-width: #{$breakpoint-lg}px)",
+) !default;
+
+@mixin mq($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+@function vw($px) {
+  @if $production !=1 {
+    @return $px * 1px;
+  }
+
+  @return calc($px * 100vw / $sp-full-width);
+}
+
+@function px2Rem($px) {
+  @if $production !=1 {
+    @return $px * 1px;
+  }
+
+  @return calc($px / 16) * 1rem;
+}
+
+@function vwp($px) {
+  @if $production !=1 {
+    @return $px * 1px;
+  }
+
+  @return calc($px * 100vw / $pc-full-width);
+}
