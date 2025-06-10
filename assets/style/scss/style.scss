@@ -1,7 +1,7 @@
 
 $sp-full-width: 390; 
-$pc-full-width: 1536;
-$pc-content-width: 1100;
+$pc-full-width: 1442;
+$pc-content-width: 1029;
 
 $breakpoint-md: 768;
 $breakpoint-lg: $pc-content-width;
@@ -31,7 +31,6 @@ $breakpoints: (
   @if $production !=1 {
     @return $px * 1px;
   }
-
   @return calc($px / 16) * 1rem;
 }
 
@@ -39,6 +38,37 @@ $breakpoints: (
   @if $production !=1 {
     @return $px * 1px;
   }
-
   @return calc($px * 100vw / $pc-full-width);
+}
+//header
+.header{
+  &__links{
+    display: flex;
+    gap: vw(10);
+  }
+  &__link--primary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: vw(107);
+    height: vw(31);
+    background-color: #fa7da3;
+    border-radius: vw(15.5);
+    color: #fff;
+    font-size: vw(16);
+  }
+  &__link--secondary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: vw(173.77);
+    height: vw(31);
+    background-color: #49c43d;
+    color: #fff;
+    border-radius: vw(15.5);
+    font-size: vw(16);
+  }
+  &__span{
+    font-size: vw(13.3);
+  }
 }

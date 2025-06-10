@@ -1,1 +1,29 @@
-/*# sourceMappingURL=style.css.map */
+.header__links {
+  display: flex;
+  gap: 2.5641025641vw;
+}
+.header__link--primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 27.4358974359vw;
+  height: 7.9487179487vw;
+  background-color: #fa7da3;
+  border-radius: 3.9743589744vw;
+  color: #fff;
+  font-size: 4.1025641026vw;
+}
+.header__link--secondary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44.5564102564vw;
+  height: 7.9487179487vw;
+  background-color: #49c43d;
+  color: #fff;
+  border-radius: 3.9743589744vw;
+  font-size: 4.1025641026vw;
+}
+.header__span {
+  font-size: 3.4102564103vw;
+}/*# sourceMappingURL=style.css.map */
