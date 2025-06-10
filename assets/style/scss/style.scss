@@ -41,34 +41,29 @@ $breakpoints: (
   @return calc($px * 100vw / $pc-full-width);
 }
 //header
-.header{
-  &__links{
+@mixin flex-center($width, $height, $bg-color) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: vw($width);
+  height: vw($height);
+  background-color: $bg-color;
+  border-radius: vw(15.5);
+  color: #fff;
+  font-size: vw(16);
+}
+.header {
+  &__links {
     display: flex;
     gap: vw(10);
   }
-  &__link--primary{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: vw(107);
-    height: vw(31);
-    background-color: #fa7da3;
-    border-radius: vw(15.5);
-    color: #fff;
-    font-size: vw(16);
+  &__link--primary {
+    @include flex-center(107, 31, #fa7da3);
   }
-  &__link--secondary{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: vw(173.77);
-    height: vw(31);
-    background-color: #49c43d;
-    color: #fff;
-    border-radius: vw(15.5);
-    font-size: vw(16);
+  &__link--secondary {
+    @include flex-center(173.77, 31, #49c43d);
   }
-  &__span{
+  &__span {
     font-size: vw(13.3);
   }
 }
