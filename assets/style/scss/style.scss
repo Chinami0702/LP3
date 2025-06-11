@@ -84,16 +84,20 @@ body{
   }
 }
 //intro
-.intro{
+.intro {
   background-color: #fa7da3;
-  padding: vw(0) vw(0) vw(2) vw(3);
-  &__container{
-    // width: vw(350);
-    // margin: 0 0 0 auto;
+  padding: vw(0);
+
+  &__container {
+    background-image: url(/assets/image/intro_sp.png);
+    background-repeat: no-repeat;
+    background-size: vw(209);
+    background-position: left bottom;
     display: flex;
     justify-content: space-between;
   }
-  &__title{
+
+  &__title {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,40 +106,88 @@ body{
     font-weight: 400;
     font-size: vw(42);
   }
-  &__span{
+
+  &__span {
     font-size: vw(18);
   }
-  &__price{
-    background-color: rgba(255, 255,255, 0.3);
+
+  &__subspan {
+    font-size: vw(36);
+  }
+
+  &__price {
+    background-color: rgba(255, 255, 255, 0.3);
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     padding: vw(10) vw(23) vw(21) vw(26);
     width: vw(130);
+
+    &--top {
+      background-color: #fff;
+      color: #fa7da3;
+      width: vw(47);
+      margin: 0;
+      font-size: vw(13);
+      font-weight: 700;
+      text-align: center;
+    }
+
+    &--bottom {
+      margin: 0;
+      font-size: vw(24);
+      font-weight: 700;
+      color: #fff;
+    }
+
+    &--right {
+      font-size: vw(76);
+      font-weight: 700;
+      color: #fffd7a;
+      margin: 0;
+      line-height: 1;
+    }
   }
-  &__price--top{
-    background-color: #fff;
+
+  &__lists {
+    padding: vw(11) vw(25) vw(30) vw(18);
+
+    &--one {
+      font-size: vw(14);
+      font-family: Outfit;
+      margin: 0;
+      color: #fff;
+      text-align: end;
+    }
+
+    &--two {
+      color: #fff;
+      border: 1px solid #fff;
+      width: vw(133);
+      height: vw(35);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__threespan {
+    font-size: vw(10);
+  }
+}
+//note
+.note{
+  background-color: #fffedd;
+  padding: vw(23) vw(19) vw(16) vw(21);
+  &__container{
+    width: vw(350);
+    margin: 0 auto;
+  }
+  &__heading{
+    margin: 0;
+    font-size: vw(21);
     color: #fa7da3;
-    width: vw(47);
-    margin: 0;
-    font-size: vw(13);
-    font-weight: 700;
+    font-weight: 400;
     text-align: center;
-  }
-  &__price--bottom{
-    margin: 0;
-    font-size: vw(24);
-    font-weight: 700;
-    color: #fff;
-  }
-  &__price--right{
-    font-size: vw(76);
-    font-weight: 700;
-    color: #fffd7a;
-    margin: 0;
-    line-height: 1;
-  }
-  &__subspan{
-    font-size: vw(36);
   }
 }
