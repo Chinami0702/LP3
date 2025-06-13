@@ -1,9 +1,9 @@
 $sp-full-width: 390;
-$pc-full-width: 1442;
+$pc-full-width: 1440;
 $pc-content-width: 1029;
 
 $breakpoint-md: 768;
-$breakpoint-lg: $pc-content-width;
+$breakpoint-lg: $pc-full-width;
 
 $production: 1;
 
@@ -107,6 +107,8 @@ body {
     background-position: left bottom;
     display: flex;
     justify-content: space-between;
+    max-width: px2Rem(1028);
+    margin: 0 auto;
   }
 
   &__title {
@@ -117,6 +119,11 @@ body {
     color: #fff;
     font-weight: 400;
     font-size: vw(42);
+
+    @include mq(lg) {
+      font-size: vwp(122);
+      margin: vwp(32) 0 0 0;
+    }
   }
 
   &__span {
@@ -134,6 +141,11 @@ body {
     justify-content: space-between;
     padding: vw(10) vw(23) vw(21) vw(26);
     width: vw(130);
+
+    @include mq(lg) {
+      width: vwp(423);
+      padding: vwp(30) vwp(50) vwp(50) vwp(60);
+    }
 
     &--top {
       background-color: #fff;
@@ -158,11 +170,18 @@ body {
       color: #fffd7a;
       margin: 0;
       line-height: 1;
+
+      @include mq(lg) {
+        font-size: vwp(171);
+      }
     }
   }
 
   &__lists {
     padding: vw(11) vw(25) vw(30) vw(18);
+    @include mq(lg) {
+      padding: vwp(10) vwp(20) vwp(10) vwp(20);
+    }
 
     &--one {
       font-size: vw(14);
@@ -187,6 +206,8 @@ body {
     font-size: vw(10);
   }
 }
+
+
 
 //note
 .note {
@@ -255,88 +276,104 @@ body {
     text-align: center;
     margin: vw(0) 0 vw(20) 0;
   }
-&__link {
-  display: flex;    
-  align-items: center;   
-  background-color: #49c43d;
-  width: vw(350);
-  height: vw(80);
-  border-radius: vw(40);
-  position: relative;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    background-color: #49c43d;
+    width: vw(350);
+    height: vw(80);
+    border-radius: vw(40);
+    position: relative;
+  }
+
+  &__click {
+    flex: 1;
+    text-align: center;
+    font-size: vw(21);
+    color: #fff;
+    font-weight: 800;
+    cursor: pointer;
+    margin: 0;
+  }
+
+  &__link img {
+    margin-left: auto;
+    margin-right: vw(20);
+    width: vw(10);
+    height: vw(14);
+  }
+
+  &__wrapper {
+    width: vw(351);
+    margin: 0 auto;
+    padding: vw(30) 0 vw(10) 0;
+  }
+
+  &__txt {
+    color: #50bfff;
+    font-size: vw(17);
+    font-weight: 600;
+    text-align: center;
+    border-top: 1px solid #50bfff;
+    border-bottom: 1px solid #50bfff;
+    padding: vw(10) 0;
+    margin: 0;
+  }
+
+  &__details {
+    margin-top: vw(15);
+  }
+
+  &__detail {
+    display: flex;
+    align-items: center;
+  }
+
+  &__subtitle {
+    font-size: vw(14);
+    font-weight: 400;
+    margin: 0;
+  }
+
+  &__subtxt {
+    font-size: vw(14);
+    margin: 0;
+  }
+
+  &__span {
+    font-size: vw(11);
+  }
 }
-&__click {
-  flex: 1;
-  text-align: center;
-  font-size: vw(21);
-  color: #fff;
-  font-weight: 800;
-  cursor: pointer;
-  margin: 0;
-}
-&__link img {
-  margin-left: auto;
-  margin-right: vw(20);
-  width: vw(10);
-  height: vw(14);
-}
-&__wrapper{
-  width: vw(351);
-  margin: 0 auto;
-  padding: vw(30) 0 vw(10) 0;
-}
-&__txt{
-  color: #50bfff;
-  font-size: vw(17);
-  font-weight: 600;
-  text-align: center;
-  border-top: 1px solid #50bfff;
-  border-bottom: 1px solid #50bfff;
-  padding: vw(10) 0;
-  margin: 0;
-}
-&__details{
-  margin-top: vw(15);
-}
-&__detail{
-  display: flex;
-  align-items: center;
-}
-&__subtitle{
-  font-size: vw(14);
-  font-weight: 400;
-  margin: 0;
-}
-&__subtxt{
-  font-size: vw(14);
-  margin: 0;
-}
-&__span{
-  font-size: vw(11);
-}
-}
+
 //point
-.point{
+.point {
   padding: vw(10) vw(0) vw(10) vw(0);
   background-color: #fdf0f5;
-  &__container{
+
+  &__container {
     width: vw(350);
     margin: 0 auto;
   }
-  &__heading{
+
+  &__heading {
     text-align: center;
     font-size: vw(18);
     color: #4d2b1b;
   }
-  &__img01{
+
+  &__img01 {
     width: vw(197);
   }
-  &__span{
+
+  &__span {
     display: flex;
     justify-content: center;
     font-size: vw(32);
     color: #fa7da3;
   }
-  &__title{
+
+  &__title {
     font-size: vw(18);
     color: #fff;
     background-color: #fa7da3;
@@ -347,7 +384,8 @@ body {
     border-top-right-radius: vw(10);
     margin: 0;
   }
-  &__note{
+
+  &__note {
     background-color: #fff;
     padding: vw(19) vw(10) vw(20) vw(10);
     border: 1px solid #fa7da3;
@@ -355,51 +393,61 @@ body {
     border-bottom-right-radius: vw(10);
     margin-bottom: vw(31);
   }
-  &__description{
+
+  &__description {
     font-size: vw(14);
     color: #4d2b1b;
     margin: vw(0) vw(0) vw(10) vw(0);
   }
-  &__flex{
+
+  &__flex {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     gap: vw(20);
   }
-  &__figure{
+
+  &__figure {
     width: vw(143);
     margin: 0;
   }
-  &__figcaption{
+
+  &__figcaption {
     width: vw(143);
     text-align: center;
     font-size: vw(14);
-     }
- &__description{
-   background-color: #fff;
   }
-  &__subtitle{
+
+  &__description {
+    background-color: #fff;
+  }
+
+  &__subtitle {
     font-size: vw(18);
     color: #4d2b1b;
     text-align: center;
     margin: vw(10) vw(0) vw(30) vw(0);
   }
-  &__figcaptiontwo{
+
+  &__figcaptiontwo {
     width: vw(100);
     color: #fa7da3;
     font-size: vw(14);
     font-weight: 600;
     text-align: center;
   }
-  &__imgs{
+
+  &__imgs {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  &__figuretwo{
+
+  &__figuretwo {
     width: vw(100);
     margin: 0;
   }
-  &__descriptions{
+
+  &__descriptions {
     font-size: vw(14);
     color: #4d2b1b;
     padding: vw(20) vw(20) vw(20) vw(20);
@@ -409,48 +457,57 @@ body {
     border: 1px solid #fa7da3;
   }
 }
+
 //corse
-.course{
+.course {
   padding: vw(20) vw(20) vw(30) vw(20);
-  &__container{
+
+  &__container {
     width: vw(350);
     margin: 0 auto;
   }
- &__title{
-  font-size: vw(18);
-  color: #fa7da3;
-  text-align: center;
-  background-color: #fdf0f5;
-  font-weight: 400;
-  padding: vw(10) vw(0);
-  margin: 0;
-  border-top-left-radius: vw(10);
-  border-top-right-radius: vw(10);
- }
- &__wrapper{
-  &--top{
-    border: 1px solid #fa7da3;
-    border-radius: vw(10);
-    margin-bottom: vw(20);
+
+  &__title {
+    font-size: vw(18);
+    color: #fa7da3;
+    text-align: center;
+    background-color: #fdf0f5;
+    font-weight: 400;
+    padding: vw(10) vw(0);
+    margin: 0;
+    border-top-left-radius: vw(10);
+    border-top-right-radius: vw(10);
   }
- }
- &__box{
-  padding: vw(10) vw(20) vw(10) vw(20);
- }
- &__txt{
-  font-size: vw(14);
-  margin:0 0 vw(10) 0
- }
+
+  &__wrapper {
+    &--top {
+      border: 1px solid #fa7da3;
+      border-radius: vw(10);
+      margin-bottom: vw(20);
+    }
+  }
+
+  &__box {
+    padding: vw(10) vw(20) vw(10) vw(20);
+  }
+
+  &__txt {
+    font-size: vw(14);
+    margin: 0 0 vw(10) 0
+  }
 }
+
 //voice
-.voice{
+.voice {
   background-color: #fdf0f5;
-  &__container{
+
+  &__container {
     width: vw(350);
     margin: 0 auto;
     padding: vw(20) vw(20) vw(30) vw(20);
   }
-  &__title{
+
+  &__title {
     font-size: vw(18);
     color: #fff;
     text-align: center;
@@ -461,11 +518,13 @@ body {
     border-top-left-radius: vw(10);
     border-top-right-radius: vw(10);
   }
-  &__wrapper{
+
+  &__wrapper {
     width: vw(310);
     margin: 0 auto;
   }
-  &__wrap{
+
+  &__wrap {
     background-color: #fff;
     padding: vw(10) vw(20) vw(10) vw(20);
     border: 1px solid #fa7da3;
@@ -476,17 +535,20 @@ body {
     justify-content: center;
     gap: vw(10);
   }
-  &__img{
+
+  &__img {
     width: vw(86);
     height: vw(111);
   }
-  &__txt{
+
+  &__txt {
     font-size: vw(16);
     color: #fa7da3;
     font-weight: 600;
     margin: vw(10) 0 0 0;
   }
-  &__text{
+
+  &__text {
     font-size: vw(14);
     color: #333333;
     margin: vw(5) 0 0 0;
@@ -496,13 +558,46 @@ body {
 }
 
 //fotoer
-.footer{
+.footer {
   background-color: #fa7da3;
   height: vw(64);
-  &__logo{
+
+  &__logo {
     display: block;
-   width: vw(75);
-   margin: 0 auto;
-   padding-top: vw(10);
+    width: vw(75);
+    margin: 0 auto;
+    padding-top: vw(10);
   }
+}
+
+.voice__swiper {
+  padding-bottom: 40px;
+  /* ページネーション分、下に余裕を作る */
+  position: relative;
+  /* もし必要なら */
+}
+
+.swiper-pagination-bullet {
+  background-color: #ffd2d2;
+  /* ピンク色（Hot Pink） */
+  opacity: 0.6;
+  /* 少し透け感をつけたい場合 */
+}
+
+/* 選択中のバレットをもっと濃いピンクに */
+.swiper-pagination-bullet-active {
+  background-color: #fa7da3;
+  /* 濃いピンク色（Deep Pink） */
+  opacity: 1;
+}
+
+.swiper-pagination-bullet {
+  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 12px));
+  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 12px));
+  display: inline-block;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 6px);
 }
