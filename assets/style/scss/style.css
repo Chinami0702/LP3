@@ -217,7 +217,7 @@ body {
   .intro__price {
     width: vwt(423);
     height: vwt(222);
-    padding: vwt(0) vwt(22) vwt(22) vwt(25);
+    padding: vwt(0) vwt(22) vwt(32) vwt(25);
     justify-content: center;
   }
 }
@@ -225,7 +225,7 @@ body {
   .intro__price {
     width: 26.4375rem;
     height: 13.875rem;
-    padding: 0rem 1.375rem 1.375rem 1.5625rem;
+    padding: 0rem 1.375rem 2rem 1.5625rem;
     justify-content: center;
   }
 }
@@ -291,11 +291,13 @@ body {
 @media screen and (min-width: 768px) {
   .intro__lists--one {
     font-size: vwt(26);
+    margin: 0 0 vwt(40) 0;
   }
 }
 @media screen and (min-width: 1030px) {
   .intro__lists--one {
     font-size: 1.625rem;
+    margin: 0 0 2.5rem 0;
   }
 }
 .intro__lists--two {

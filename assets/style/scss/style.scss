@@ -239,13 +239,13 @@ body {
     @include mq() {
       width: vwt(423);
       height: vwt(222);
-      padding: vwt(0) vwt(22) vwt(22) vwt(25);
+      padding: vwt(0) vwt(22) vwt(32) vwt(25);
       justify-content: center;
     }
     @include mq(lg) {
       width: px2Rem(423);
       height: px2Rem(222);
-      padding: px2Rem(0) px2Rem(22) px2Rem(22) px2Rem(25);
+      padding: px2Rem(0) px2Rem(22) px2Rem(32) px2Rem(25);
       justify-content: center;
    
     }
@@ -307,9 +307,11 @@ body {
       text-align: end;
       @include mq() {
         font-size: vwt(26);
+        margin: 0 0 vwt(40) 0;
       }
       @include mq(lg) {
         font-size: px2Rem(26);
+        margin: 0 0 px2Rem(40) 0;
       }
     }
 
