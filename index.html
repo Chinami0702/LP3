@@ -43,7 +43,12 @@
     <main>
         <div class="intro">
             <div class="intro__container">
-                <h1 class="intro__title">全身脱毛<span class="intro__span">（顔・VIO込）</span></h1>
+                <h1>
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="/assets/image/top_title_pc.png">
+                        <img src="/assets/image/top_title_sp.png" alt="" class="intro__title">
+                    </picture>
+                </h1>
                 <div class="intro__feacher">
                     <div class="intro__price">
                         <div class="intro__price--left">
@@ -210,58 +215,58 @@
                 </div>
             </div><!--container-->
         </section><!--course-->
-      <section class="voice">
-    <div class="voice__container">
-        <h2 class="point__heading">
-            <span class="point__span">
-                <img src="/assets/image/left_star.svg" alt="" class="point__img02" width="30" height="40">
-                お客様の声
-                <img src="/assets/image/right_star.svg" alt="" class="point__img02" width="30" height="40">
-            </span>
-        </h2>
-        <div class="swiper voice__swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="voice__wrapper">
-                        <h3 class="voice__title">脱毛コース</h3>
-                        <div class="voice__wrap">
-                            <img src="/assets/image/voice.png" alt="" class="voice__img">
-                            <div class="wrap--txt">
-                                <p class="voice__txt">30代N.Tさま/会社員</p>
-                                <p class="voice__text">納得いくまで何度も、追加料金なく安心して通うことができて大変満足しています。</p>
+        <section class="voice">
+            <div class="voice__container">
+                <h2 class="point__heading">
+                    <span class="point__span">
+                        <img src="/assets/image/left_star.svg" alt="" class="point__img02" width="30" height="40">
+                        お客様の声
+                        <img src="/assets/image/right_star.svg" alt="" class="point__img02" width="30" height="40">
+                    </span>
+                </h2>
+                <div class="swiper voice__swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="voice__wrapper">
+                                <h3 class="voice__title">脱毛コース</h3>
+                                <div class="voice__wrap">
+                                    <img src="/assets/image/voice.png" alt="" class="voice__img">
+                                    <div class="wrap--txt">
+                                        <p class="voice__txt">30代N.Tさま/会社員</p>
+                                        <p class="voice__text">納得いくまで何度も、追加料金なく安心して通うことができて大変満足しています。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="voice__wrapper">
+                                <h3 class="voice__title">脱毛コース</h3>
+                                <div class="voice__wrap">
+                                    <img src="/assets/image/voice.png" alt="" class="voice__img">
+                                    <div class="wrap--txt">
+                                        <p class="voice__txt">30代N.Tさま/会社員</p>
+                                        <p class="voice__text">納得いくまで何度も、追加料金なく安心して通うことができて大変満足しています。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="voice__wrapper">
+                                <h3 class="voice__title">脱毛コース</h3>
+                                <div class="voice__wrap">
+                                    <img src="/assets/image/voice.png" alt="" class="voice__img">
+                                    <div class="wrap--txt">
+                                        <p class="voice__txt">30代N.Tさま/会社員</p>
+                                        <p class="voice__text">納得いくまで何度も、追加料金なく安心して通うことができて大変満足しています。</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="swiper-pagination"></div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="voice__wrapper">
-                        <h3 class="voice__title">脱毛コース</h3>
-                        <div class="voice__wrap">
-                            <img src="/assets/image/voice.png" alt="" class="voice__img">
-                            <div class="wrap--txt">
-                                <p class="voice__txt">30代N.Tさま/会社員</p>
-                                <p class="voice__text">納得いくまで何度も、追加料金なく安心して通うことができて大変満足しています。</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                  <div class="swiper-slide">
-                    <div class="voice__wrapper">
-                        <h3 class="voice__title">脱毛コース</h3>
-                        <div class="voice__wrap">
-                            <img src="/assets/image/voice.png" alt="" class="voice__img">
-                            <div class="wrap--txt">
-                                <p class="voice__txt">30代N.Tさま/会社員</p>
-                                <p class="voice__text">納得いくまで何度も、追加料金なく安心して通うことができて大変満足しています。</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
-    </div><!--container-->
-</section><!--voice-->
+            </div><!--container-->
+        </section><!--voice-->
         <div class="btn">
             <div class="btn__container">
                 <h2 class="btn__title">無料体験実施中！</h2>
@@ -275,27 +280,27 @@
     <footer class="footer">
         <img src="/assets/image/logo_white.svg" alt="" class="footer__logo">
     </footer>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-const swiper = new Swiper('.voice__swiper', {
-  loop: true,
-  centeredSlides: true,
-  slidesPerView: 1,
-  spaceBetween: 20,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  autoplay: {
-    delay: 10000,        // 3秒ごとに自動スライド
-    disableOnInteraction: false, // ユーザー操作後も自動再生続行
-  },
-  breakpoints: {
-    768: { slidesPerView: 1, spaceBetween: 24 },
-    1024: { slidesPerView: 1, spaceBetween: 28 }
-  }
-});
-</script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.voice__swiper', {
+            loop: true,
+            centeredSlides: true,
+            slidesPerView: 1,
+            spaceBetween: 20,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 10000,        // 3秒ごとに自動スライド
+                disableOnInteraction: false, // ユーザー操作後も自動再生続行
+            },
+            breakpoints: {
+                768: { slidesPerView: 1, spaceBetween: 24 },
+                1024: { slidesPerView: 1, spaceBetween: 28 }
+            }
+        });
+    </script>
 
 
 </body>
