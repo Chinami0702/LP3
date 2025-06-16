@@ -18,6 +18,7 @@
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Outfit:wght@100..900&display=swap"
         rel="stylesheet">
     <!--resets.css-->
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/assets/style/scss/style.css">
 </head>
@@ -57,12 +58,17 @@
                         </div>
                         <p class="intro__price--right">0<span class="intro__subspan">円</span></p>
                     </div>
-                    <div class="intro__lists">
-                        <p class="intro__lists--one">2,480<span class="intro__threespan">円／月</span></p>
-                        <p class="intro__lists--two">通い放題</p>
-                        <p class="intro__lists--two">追加料金なし</p>
-                        <p class="intro__lists--two">安心サポート</p>
-                    </div>
+
+                    <p class="intro__description">2,480<span class="intro__threespan">円／月</span></p>
+
+                    <nav class="intro__list">
+                        <ul>
+                            <li class="intro__list-item">通い放題</li>
+                            <li class="intro__list-item">追加料金なし</li>
+                            <li class="intro__list-item">安心サポート</li>
+                        </ul>
+                    </nav>
+
                 </div>
             </div><!--container-->
         </div><!--intro-->
@@ -81,7 +87,7 @@
                 <h2 class="btn__title">無料体験実施中！</h2>
                 <a class="btn__link">
                     <p class="btn__click">カウンセリング予約<br>はこちら（無料）</p>
-                    <img src="/assets/image/right_arrow.svg" alt="" width="10" height="14">
+                    <img src="/assets/image/right_arrow.svg" alt="" width="10" height="14" class="btn__arrow">
                 </a>
                 <div class="btn__wrapper">
                     <p class="btn__txt">無料体験内容</p>
@@ -102,12 +108,15 @@
         <section class="point">
             <div class="point__container">
                 <h2 class="point__heading">
-                    <img src="/assets/image/kirameki_beauty_labo.svg" alt="" class="point__img01"> が選ばれる<br>
+                    <div style="display: flex; align-items: center; justify-content: center;">
+                        <img src="/assets/image/kirameki_beauty_labo.svg" alt="" class="point__img01">
+                        <span style="margin-left: 8px;">が選ばれる</span>
+                    </div>
                     <span class="point__span">
                         <img src="/assets/image/left_star.svg" alt="" class="point__img02" width="30" height="40">
                         3つのポイント
-                        <img src="/assets/image/right_star.svg" alt="" class="point__img02" width="30"
-                            height="40"></span>
+                        <img src="/assets/image/right_star.svg" alt="" class="point__img02" width="30" height="40">
+                    </span>
                 </h2>
                 <div class="point__wrapper point__wrapper--top">
                     <h3 class="point__title">POINT1 通い放題</h3>
