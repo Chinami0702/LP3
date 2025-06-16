@@ -109,16 +109,16 @@ body {
 }
 @media screen and (min-width: 768px) {
   .header__link--secondary {
-    width: 28.7378640777vw;
+    width: 29.1262135922vw;
     height: 4.854368932vw;
-    font-size: 2.0388349515vw;
+    font-size: 1.9417475728vw;
   }
 }
 @media screen and (min-width: 1030px) {
   .header__link--secondary {
-    width: 18.5rem;
+    width: 18.75rem;
     height: 3.125rem;
-    font-size: 2.0388349515vw;
+    font-size: 1.25rem;
   }
 }
 .header__span {
@@ -208,7 +208,7 @@ body {
   align-items: flex-end;
   justify-content: space-between;
   padding: 2.5641025641vw 5.8974358974vw 5.3846153846vw 6.6666666667vw;
-  width: 33.3333333333vw;
+  margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
   .intro__price {
@@ -270,34 +270,35 @@ body {
     font-size: 10.6875rem;
   }
 }
-.intro__lists {
-  padding: 2.8205128205vw 6.4102564103vw 7.6923076923vw 4.6153846154vw;
-}
-@media screen and (min-width: 1030px) {
-  .intro__lists {
-    padding: 0.6944444444vw 1.3888888889vw 0.6944444444vw 1.3888888889vw;
-  }
-}
-.intro__lists--one {
+.intro__description {
   font-size: 3.5897435897vw;
   font-family: Outfit;
-  margin: 0;
+  margin: 0 0 5.1282051282vw 0;
   color: #fff;
   text-align: end;
+  width: 33.3333333333vw;
 }
 @media screen and (min-width: 768px) {
-  .intro__lists--one {
+  .intro__description {
     font-size: 2.5242718447vw;
-    margin: 0 0 3.8834951456vw 0;
+    margin: 0 0 0.9708737864vw 0;
   }
 }
 @media screen and (min-width: 1030px) {
-  .intro__lists--one {
+  .intro__description {
     font-size: 1.625rem;
-    margin: 0 0 2.5rem 0;
+    margin: 0 0 1.25rem 0;
   }
 }
-.intro__lists--two {
+.intro__list {
+  padding: 0vw 3.8461538462vw 2.5641025641vw 4.6153846154vw;
+}
+@media screen and (min-width: 1030px) {
+  .intro__list {
+    padding: 0.9708737864vw 1.9417475728vw 0.9708737864vw 1.9417475728vw;
+  }
+}
+.intro__list-item {
   color: #fff;
   border: 1px solid #fff;
   width: 34.1025641026vw;
@@ -306,16 +307,17 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 4.6153846154vw;
+  margin: 0vw 0vw 1.2820512821vw 0vw;
 }
 @media screen and (min-width: 768px) {
-  .intro__lists--two {
+  .intro__list-item {
     width: 41.2621359223vw;
     height: 6.5048543689vw;
     font-size: 2.7184466019vw;
   }
 }
 @media screen and (min-width: 1030px) {
-  .intro__lists--two {
+  .intro__list-item {
     width: 26.5625rem;
     height: 4.1875rem;
     font-size: 1.75rem;
@@ -524,6 +526,7 @@ body {
   font-weight: 800;
   cursor: pointer;
   margin: 0;
+  position: relative;
 }
 @media screen and (min-width: 768px) {
   .btn__click {
@@ -535,11 +538,14 @@ body {
     font-size: 2.125rem;
   }
 }
-.btn__link img {
-  margin-left: auto;
-  margin-right: 5.1282051282vw;
+.btn__arrow {
+  position: absolute;
   width: 2.5641025641vw;
   height: 3.5897435897vw;
+  margin-right: 2.5641025641vw;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .btn__wrapper {
   width: 90vw;
@@ -571,8 +577,17 @@ body {
 }
 .btn__details {
   margin-top: 3.8461538462vw;
-  width: 575px;
-  margin: 2.5641025641vw auto;
+}
+@media screen and (min-width: 768px) {
+  .btn__details {
+    width: 57.2815533981vw;
+    margin: 1.9417475728vw auto 0 auto;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .btn__details {
+    width: 36.875rem;
+  }
 }
 .btn__detail {
   display: flex;
@@ -635,15 +650,16 @@ body {
   text-align: center;
   font-size: 4.6153846154vw;
   color: #4d2b1b;
+  justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .point__heading {
-    font-size: 4.0776699029vw;
+    font-size: 1.7475728155vw;
   }
 }
 @media screen and (min-width: 1030px) {
   .point__heading {
-    font-size: 2.625rem;
+    font-size: 1.125rem;
   }
 }
 .point__img01 {
@@ -659,6 +675,22 @@ body {
     width: 16.5625rem;
   }
 }
+.point__img02 {
+  width: 9.4871794872vw;
+  height: 11.7948717949vw;
+}
+@media screen and (min-width: 768px) {
+  .point__img02 {
+    width: 4.854368932vw;
+    height: 5.9223300971vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .point__img02 {
+    width: 3.125rem;
+    height: 3.8125rem;
+  }
+}
 .point__span {
   display: flex;
   justify-content: center;
@@ -668,11 +700,27 @@ body {
 @media screen and (min-width: 768px) {
   .point__span {
     font-size: 4.0776699029vw;
+    margin-top: 0.9708737864vw;
   }
 }
 @media screen and (min-width: 1030px) {
   .point__span {
     font-size: 2.625rem;
+  }
+}
+.point__wrapper {
+  max-width: 200vw;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .point__wrapper {
+    max-width: 75.7281553398vw;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .point__wrapper {
+    max-width: 48.75rem;
   }
 }
 .point__title {
@@ -685,6 +733,12 @@ body {
   border-top-left-radius: 2.5641025641vw;
   border-top-right-radius: 2.5641025641vw;
   margin: 0;
+}
+@media screen and (min-width: 768px) {
+  .point__title {
+    font-size: 2.7184466019vw;
+    padding: 1.9417475728vw 0vw;
+  }
 }
 .point__note {
   background-color: #fff;
@@ -699,10 +753,35 @@ body {
   color: #4d2b1b;
   margin: 0vw 0vw 2.5641025641vw 0vw;
 }
+@media screen and (min-width: 768px) {
+  .point__description {
+    font-size: 2.0388349515vw;
+    margin: 0vw 0vw 1.9417475728vw 0vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .point__description {
+    font-size: 1.3125rem;
+    margin: 0rem 0rem 1.25rem 0rem;
+  }
+}
 .point__flex {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 5.1282051282vw;
+}
+@media screen and (min-width: 768px) {
+  .point__flex {
+    width: 56.3106796117vw;
+    margin: 0 auto;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .point__flex {
+    width: 36.25rem;
+  }
 }
 .point__figure {
   width: 36.6666666667vw;
@@ -712,6 +791,19 @@ body {
   width: 36.6666666667vw;
   text-align: center;
   font-size: 3.5897435897vw;
+}
+@media screen and (min-width: 768px) {
+  .point__figcaption {
+    font-size: 2.0388349515vw;
+    width: 19.4174757282vw;
+    text-align: start;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .point__figcaption {
+    font-size: 1.3125rem;
+    width: 12.5rem;
+  }
 }
 .point__description {
   background-color: #fff;
