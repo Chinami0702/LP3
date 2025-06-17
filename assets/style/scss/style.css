@@ -212,7 +212,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .intro__price {
-    width: 41.067961165vw;
+    width: 41.7475728155vw;
     height: 21.5533980583vw;
     padding: 0vw 2.1359223301vw 3.1067961165vw 2.427184466vw;
     justify-content: center;
@@ -220,7 +220,7 @@ body {
 }
 @media screen and (min-width: 1030px) {
   .intro__price {
-    width: 26.4375rem;
+    width: 26.875rem;
     height: 13.875rem;
     padding: 0rem 1.375rem 2rem 1.5625rem;
     justify-content: center;
@@ -253,6 +253,27 @@ body {
   font-weight: 700;
   color: #fff;
 }
+@media screen and (min-width: 768px) {
+  .intro__price--bottom {
+    width: 10.7766990291vw;
+    font-size: 5.2427184466vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .intro__price--bottom {
+    font-size: 3.375rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .intro__price--left {
+    width: 10.6796116505vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .intro__price--left {
+    width: 6.875rem;
+  }
+}
 .intro__price--right {
   font-size: 19.4871794872vw;
   font-weight: 700;
@@ -281,21 +302,28 @@ body {
 @media screen and (min-width: 768px) {
   .intro__description {
     font-size: 2.5242718447vw;
+    width: 48.5436893204vw;
     margin: 0 0 0.9708737864vw 0;
   }
 }
 @media screen and (min-width: 1030px) {
   .intro__description {
     font-size: 1.625rem;
+    width: 31.25rem;
     margin: 0 0 1.25rem 0;
   }
 }
 .intro__list {
   padding: 0vw 3.8461538462vw 2.5641025641vw 4.6153846154vw;
 }
+@media screen and (min-width: 768px) {
+  .intro__list {
+    padding: 0.9708737864vw 0vw 0.9708737864vw 0vw;
+  }
+}
 @media screen and (min-width: 1030px) {
   .intro__list {
-    padding: 0.9708737864vw 1.9417475728vw 0.9708737864vw 1.9417475728vw;
+    padding: 0.625rem 0rem 0.625rem 0rem;
   }
 }
 .intro__list-item {
@@ -314,6 +342,7 @@ body {
     width: 41.2621359223vw;
     height: 6.5048543689vw;
     font-size: 2.7184466019vw;
+    margin: 0vw 0vw 2.9126213592vw 0vw;
   }
 }
 @media screen and (min-width: 1030px) {
@@ -321,6 +350,7 @@ body {
     width: 26.5625rem;
     height: 4.1875rem;
     font-size: 1.75rem;
+    margin: 0rem 0rem 1.875rem 0rem;
   }
 }
 .intro__threespan {
@@ -553,6 +583,16 @@ body {
   padding: 7.6923076923vw 0 2.5641025641vw 0;
   max-width: 147.4358974359vw;
 }
+@media screen and (min-width: 768px) {
+  .btn__wrapper {
+    padding: 4.854368932vw 0 0 0;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .btn__wrapper {
+    padding: 3.125rem 0 0 0;
+  }
+}
 .btn__txt {
   color: #50bfff;
   font-size: 4.358974359vw;
@@ -701,11 +741,14 @@ body {
   .point__span {
     font-size: 4.0776699029vw;
     margin-top: 0.9708737864vw;
+    margin-bottom: 0.9708737864vw;
   }
 }
 @media screen and (min-width: 1030px) {
   .point__span {
     font-size: 2.625rem;
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
   }
 }
 .point__wrapper {
@@ -738,6 +781,16 @@ body {
   .point__title {
     font-size: 2.7184466019vw;
     padding: 1.9417475728vw 0vw;
+    border-top-left-radius: 0.9708737864vw;
+    border-top-right-radius: 0.9708737864vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .point__title {
+    font-size: 1.75rem;
+    padding: 1.25rem 0rem;
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
   }
 }
 .point__note {
@@ -747,6 +800,20 @@ body {
   border-bottom-left-radius: 2.5641025641vw;
   border-bottom-right-radius: 2.5641025641vw;
   margin-bottom: 7.9487179487vw;
+}
+@media screen and (min-width: 768px) {
+  .point__note {
+    margin-bottom: 4.854368932vw;
+    border-bottom-left-radius: 0.9708737864vw;
+    border-bottom-right-radius: 0.9708737864vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .point__note {
+    margin-bottom: 3.125rem;
+    border-bottom-left-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+  }
 }
 .point__description {
   font-size: 3.5897435897vw;
@@ -924,6 +991,8 @@ body {
   .point__descriptions {
     font-size: 2.0388349515vw;
     padding: 2.9126213592vw 2.9126213592vw 2.9126213592vw 2.9126213592vw;
+    border-bottom-left-radius: 0.9708737864vw;
+    border-bottom-right-radius: 0.9708737864vw;
     font-weight: 600;
   }
 }
@@ -931,11 +1000,23 @@ body {
   .point__descriptions {
     font-size: 1.3125rem;
     padding: 1.875rem 1.875rem 1.875rem 1.875rem;
+    border-bottom-left-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
   }
 }
 
 .course {
   padding: 5.1282051282vw 5.1282051282vw 7.6923076923vw 5.1282051282vw;
+}
+@media screen and (min-width: 768px) {
+  .course {
+    padding: 0.9708737864vw 1.9417475728vw 1.9417475728vw 1.9417475728vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .course {
+    padding: 0.625rem 1.25rem 1.25rem 1.25rem;
+  }
 }
 .course__container {
   width: 89.7435897436vw;
@@ -971,15 +1052,15 @@ body {
 @media screen and (min-width: 768px) {
   .course__title {
     font-size: 2.7184466019vw;
-    padding: 0.9708737864vw 0 0.9708737864vw 0;
+    padding: 0.4854368932vw 0 0.4854368932vw 0;
     border-top-left-radius: 0.9708737864vw;
     border-top-right-radius: 0.9708737864vw;
   }
 }
 @media screen and (min-width: 1030px) {
   .course__title {
-    font-size: 2.7184466019vw;
-    paddin: 0.625rem 0 0.625rem 0;
+    font-size: 1.75rem;
+    paddin: 0.3125rem 0 0.3125rem 0;
     border-top-left-radius: 0.625rem;
     border-top-right-radius: 0.625rem;
   }
