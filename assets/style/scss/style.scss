@@ -770,6 +770,7 @@ body {
     @include mq() {
       font-size: vwt(21);
       margin: vwt(0) vwt(0) vwt(20) vwt(0);
+      font-weight: 600;
     }
     @include mq(lg) {
       font-size: px2Rem(21);
@@ -803,12 +804,12 @@ body {
     font-size: vw(14);
     @include mq() {
       font-size: vwt(21);
-      width: vwt(200);
+      width: vwt(250);
       text-align: start;
     }
     @include mq(lg) {
       font-size: px2Rem(21);
-      width: px2Rem(200);
+      width: px2Rem(250);
     }
   }
 
@@ -821,14 +822,66 @@ body {
     color: #4d2b1b;
     text-align: center;
     margin: vw(10) vw(0) vw(30) vw(0);
+    @include mq() {
+      font-size: vwt(24);
+      margin: vwt(20) vwt(0) vwt(40) vwt(0);
+    }
+    @include mq(lg) {
+      font-size: px2Rem(24);
+      margin: px2Rem(20) px2Rem(0) px2Rem(40) px2Rem(0);
+    }
   }
 
   &__figcaptiontwo {
-    width: vw(100);
     color: #fa7da3;
     font-size: vw(14);
     font-weight: 600;
     text-align: center;
+    @include mq() {
+      font-size: vwt(14);
+    }
+    @include mq(lg) {
+      font-size: px2Rem(14);
+    }
+  }
+  &__img{
+    width: vw(100);
+    height: vw(100);
+    @include mq() {
+      width: vwt(100);
+      height: vwt(100);
+    }
+    @include mq(lg) {
+      width: px2Rem(100);
+      height: px2Rem(100);
+    }
+  }
+  &__img03 {
+    width: vw(533);
+    margin: 0 auto;
+
+    @include mq() {
+      width: vwt(230);
+      height: vwt(135);
+    }
+
+    @include mq(lg) {
+      width: px2Rem(230);
+      height: px2Rem(135);
+    }
+  }
+  &__img04{
+    width: vw(325);
+    margin: 0 auto;
+    @include mq() {
+      width: vwt(533);
+      height: vwt(601);
+      margin: 0 auto;
+    }
+    @include mq(lg) {
+      width: px2Rem(533);
+      height: px2Rem(601);
+    }  
   }
 
   &__imgs {
@@ -840,6 +893,12 @@ body {
   &__figuretwo {
     width: vw(100);
     margin: 0;
+    @include mq() {
+      width: vwt(100);
+    }
+    @include mq(lg) {
+      width: px2Rem(100);
+    } 
   }
 
   &__descriptions {
@@ -850,6 +909,15 @@ body {
     border-bottom-left-radius: vw(10);
     border-bottom-right-radius: vw(10);
     border: 1px solid #fa7da3;
+    @include mq() {
+      font-size: vwt(21);
+      padding: vwt(30) vwt(30) vwt(30) vwt(30);
+      font-weight: 600;
+    }
+    @include mq(lg) {
+      font-size: px2Rem(21);
+      padding: px2Rem(30) px2Rem(30) px2Rem(30) px2Rem(30);
+    } 
   }
 }
 
@@ -861,6 +929,16 @@ body {
     width: vw(350);
     margin: 0 auto;
   }
+  &__heading02{
+    color: #333333;
+    font-size: vw(18);
+    text-align: center;
+   
+    @include mq(){
+      font-size: vwt(24);
+      
+    }
+  }
 
   &__title {
     font-size: vw(18);
@@ -870,20 +948,26 @@ body {
     font-weight: 400;
     padding: vw(10) vw(0);
     margin: 0;
+    border: 1px solid #fa7da3;
     border-top-left-radius: vw(10);
     border-top-right-radius: vw(10);
   }
 
-  &__wrapper {
-    &--top {
+  &__wrapper-item {
+   
       border: 1px solid #fa7da3;
       border-radius: vw(10);
       margin-bottom: vw(20);
-    }
+    
   }
 
   &__box {
     padding: vw(10) vw(20) vw(10) vw(20);
+  }
+  &__img{
+    width: vw(312);
+    height: vw(206);
+    margin: 0 auto;
   }
 
   &__txt {

@@ -757,6 +757,7 @@ body {
   .point__description {
     font-size: 2.0388349515vw;
     margin: 0vw 0vw 1.9417475728vw 0vw;
+    font-weight: 600;
   }
 }
 @media screen and (min-width: 1030px) {
@@ -795,14 +796,14 @@ body {
 @media screen and (min-width: 768px) {
   .point__figcaption {
     font-size: 2.0388349515vw;
-    width: 19.4174757282vw;
+    width: 24.2718446602vw;
     text-align: start;
   }
 }
 @media screen and (min-width: 1030px) {
   .point__figcaption {
     font-size: 1.3125rem;
-    width: 12.5rem;
+    width: 15.625rem;
   }
 }
 .point__description {
@@ -814,12 +815,82 @@ body {
   text-align: center;
   margin: 2.5641025641vw 0vw 7.6923076923vw 0vw;
 }
+@media screen and (min-width: 768px) {
+  .point__subtitle {
+    font-size: 2.3300970874vw;
+    margin: 1.9417475728vw 0vw 3.8834951456vw 0vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .point__subtitle {
+    font-size: 1.5rem;
+    margin: 1.25rem 0rem 2.5rem 0rem;
+  }
+}
 .point__figcaptiontwo {
-  width: 25.641025641vw;
   color: #fa7da3;
   font-size: 3.5897435897vw;
   font-weight: 600;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .point__figcaptiontwo {
+    font-size: 1.359223301vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .point__figcaptiontwo {
+    font-size: 0.875rem;
+  }
+}
+.point__img {
+  width: 25.641025641vw;
+  height: 25.641025641vw;
+}
+@media screen and (min-width: 768px) {
+  .point__img {
+    width: 9.7087378641vw;
+    height: 9.7087378641vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .point__img {
+    width: 6.25rem;
+    height: 6.25rem;
+  }
+}
+.point__img03 {
+  width: 136.6666666667vw;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .point__img03 {
+    width: 22.3300970874vw;
+    height: 13.1067961165vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .point__img03 {
+    width: 14.375rem;
+    height: 8.4375rem;
+  }
+}
+.point__img04 {
+  width: 83.3333333333vw;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .point__img04 {
+    width: 51.7475728155vw;
+    height: 58.3495145631vw;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .point__img04 {
+    width: 33.3125rem;
+    height: 37.5625rem;
+  }
 }
 .point__imgs {
   display: flex;
@@ -830,6 +901,16 @@ body {
   width: 25.641025641vw;
   margin: 0;
 }
+@media screen and (min-width: 768px) {
+  .point__figuretwo {
+    width: 9.7087378641vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .point__figuretwo {
+    width: 6.25rem;
+  }
+}
 .point__descriptions {
   font-size: 3.5897435897vw;
   color: #4d2b1b;
@@ -839,6 +920,19 @@ body {
   border-bottom-right-radius: 2.5641025641vw;
   border: 1px solid #fa7da3;
 }
+@media screen and (min-width: 768px) {
+  .point__descriptions {
+    font-size: 2.0388349515vw;
+    padding: 2.9126213592vw 2.9126213592vw 2.9126213592vw 2.9126213592vw;
+    font-weight: 600;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .point__descriptions {
+    font-size: 1.3125rem;
+    padding: 1.875rem 1.875rem 1.875rem 1.875rem;
+  }
+}
 
 .course {
   padding: 5.1282051282vw 5.1282051282vw 7.6923076923vw 5.1282051282vw;
@@ -846,6 +940,16 @@ body {
 .course__container {
   width: 89.7435897436vw;
   margin: 0 auto;
+}
+.course__heading02 {
+  color: #333333;
+  font-size: 4.6153846154vw;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .course__heading02 {
+    font-size: 2.3300970874vw;
+  }
 }
 .course__title {
   font-size: 4.6153846154vw;
@@ -855,16 +959,22 @@ body {
   font-weight: 400;
   padding: 2.5641025641vw 0vw;
   margin: 0;
+  border: 1px solid #fa7da3;
   border-top-left-radius: 2.5641025641vw;
   border-top-right-radius: 2.5641025641vw;
 }
-.course__wrapper--top {
+.course__wrapper-item {
   border: 1px solid #fa7da3;
   border-radius: 2.5641025641vw;
   margin-bottom: 5.1282051282vw;
 }
 .course__box {
   padding: 2.5641025641vw 5.1282051282vw 2.5641025641vw 5.1282051282vw;
+}
+.course__img {
+  width: 80vw;
+  height: 52.8205128205vw;
+  margin: 0 auto;
 }
 .course__txt {
   font-size: 3.5897435897vw;
