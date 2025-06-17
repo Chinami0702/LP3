@@ -1168,11 +1168,27 @@ body {
       margin: 0;
       border-top-left-radius: vw(10);
       border-top-right-radius: vw(10);
+      @include mq(){
+        font-size: vwt(18);
+        padding: vwt(10) 0 vwt(10) 0;
+      }
+      @include mq(lg){
+        font-size: px2Rem(18);
+        padding: px2Rem(10) 0 px2Rem(10) 0;
+      }
     }
 
     &__wrapper {
       width: vw(310);
       margin: 0 auto;
+      @include mq(){
+        width: vwt(310);
+        height: vwt(188);
+      }
+      @include mq(lg){
+        width: px2Rem(310);
+        height: px2Rem(188);
+      }
     }
 
     &__wrap {
@@ -1185,11 +1201,25 @@ body {
       align-items: center;
       justify-content: center;
       gap: vw(10);
+      @include mq(){
+        padding: vw(0) vw(20) vw(0) vw(20);
+      }
+      @include mq(lg){
+        padding: vw(0) vw(20) vw(0) vw(20);
+      }
     }
 
     &__img {
       width: vw(86);
       height: vw(111);
+      @include mq(){
+        width: vwt(86);
+        height: vwt(114);
+      }
+      @include mq(lg){
+        width: px2Rem(86);
+        height: px2Rem(114);
+      }
     }
 
     &__txt {
@@ -1197,6 +1227,9 @@ body {
       color: #fa7da3;
       font-weight: 600;
       margin: vw(10) 0 0 0;
+      @include mq(){
+        font-size: vwt(16);
+      }
     }
 
     &__text {
@@ -1205,6 +1238,13 @@ body {
       margin: vw(5) 0 0 0;
       font-weight: 600;
       width: vw(172);
+      @include mq(){
+        font-size: vwt(14);
+      }
+      @include mq (lg){
+        font-size: px2Rem(14);
+      }
+
     }
   }
 
