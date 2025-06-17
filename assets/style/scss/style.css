@@ -1005,12 +1005,14 @@ body {
   .course__wrapper-item {
     width: 33.9805825243vw;
     height: 35.3398058252vw;
+    border-radius: 0.9708737864vw;
   }
 }
 @media screen and (min-width: 1030px) {
   .course__wrapper-item {
     width: 21.875rem;
     height: 22.75rem;
+    border-radius: 0.625rem;
   }
 }
 .course__box {

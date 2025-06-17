@@ -1015,10 +1015,12 @@ body {
       @include mq(){
         width: vwt(350);
         height: vwt(364);
+        border-radius: vwt(10);
       }
       @include mq(lg){
         width: px2Rem(350);
         height: px2Rem(364);
+        border-radius: px2Rem(10);
       }
   }
 
