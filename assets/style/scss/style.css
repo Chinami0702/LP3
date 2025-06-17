@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   margin: 0;
   padding: 0;
@@ -1269,23 +1268,37 @@ body {
 
 .voice__swiper {
   padding-bottom: 40px;
-  /* ページネーション分、下に余裕を作る */
   position: relative;
-  /* もし必要なら */
 }
 
 .swiper-pagination-bullet {
   background-color: #ffd2d2;
-  /* ピンク色（Hot Pink） */
   opacity: 0.6;
-  /* 少し透け感をつけたい場合 */
+}
+@media screen and (min-width: 768px) {
+  .swiper-pagination-bullet {
+    display: none;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .swiper-pagination-bullet {
+    display: none;
+  }
 }
 
-/* 選択中のバレットをもっと濃いピンクに */
 .swiper-pagination-bullet-active {
   background-color: #fa7da3;
-  /* 濃いピンク色（Deep Pink） */
   opacity: 1;
+}
+@media screen and (min-width: 768px) {
+  .swiper-pagination-bullet-active {
+    display: none;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .swiper-pagination-bullet-active {
+    display: none;
+  }
 }
 
 .swiper-pagination-bullet {

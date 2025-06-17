@@ -1263,23 +1263,30 @@ body {
 
   .voice__swiper {
     padding-bottom: 40px;
-    /* ページネーション分、下に余裕を作る */
     position: relative;
-    /* もし必要なら */
   }
 
   .swiper-pagination-bullet {
     background-color: #ffd2d2;
-    /* ピンク色（Hot Pink） */
     opacity: 0.6;
-    /* 少し透け感をつけたい場合 */
+       @include mq(){
+      display: none;
+    }
+    @include mq(lg){
+      display: none;
+    }
   }
 
-  /* 選択中のバレットをもっと濃いピンクに */
+ 
   .swiper-pagination-bullet-active {
     background-color: #fa7da3;
-    /* 濃いピンク色（Deep Pink） */
     opacity: 1;
+       @include mq(){
+      display: none;
+    }
+    @include mq(lg){
+      display: none;
+    }
   }
 
 
