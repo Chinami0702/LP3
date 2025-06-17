@@ -20,7 +20,7 @@
     <!--resets.css-->
     <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="/assets/style/scss/style.css">
+    <link rel="stylesheet" href="/assets/style/style.css">
 </head>
 
 <body>
@@ -294,29 +294,8 @@
     <footer class="footer">
         <img src="/assets/image/logo_white.svg" alt="" class="footer__logo">
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper('.voice__swiper', {
-            loop: true,
-            centeredSlides: true,
-            slidesPerView: 1,
-            spaceBetween: 20,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            autoplay: {
-                delay: 10000,        // 3秒ごとに自動スライド
-                disableOnInteraction: false, // ユーザー操作後も自動再生続行
-            },
-            breakpoints: {
-                768: { slidesPerView: 1, spaceBetween: 24 },
-                1024: { slidesPerView: 1, spaceBetween: 28 }
-            }
-        });
-    </script>
-
-
-</body>
+</body>    
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="/assets/script/main.js"></script>
 
 </html>
