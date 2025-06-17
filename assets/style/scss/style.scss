@@ -301,55 +301,58 @@ body {
       }
     }
   }
+
   &__description {
-      font-size: vw(14);
-      font-family: Outfit;
-      margin: 0 0 vw(20) 0 ;
-      color: #fff;
-      text-align: end;
-      width: vw(130);
+    font-size: vw(14);
+    font-family: Outfit;
+    margin: 0 0 vw(20) 0;
+    color: #fff;
+    text-align: end;
+    width: vw(130);
 
-      @include mq() {
-        font-size: vwt(26);
-        margin: 0 0 vwt(10) 0;
-      }
-
-      @include mq(lg) {
-        font-size: px2Rem(26);
-        margin: 0 0 px2Rem(20) 0;
-      }
+    @include mq() {
+      font-size: vwt(26);
+      margin: 0 0 vwt(10) 0;
     }
-  &__list{
+
+    @include mq(lg) {
+      font-size: px2Rem(26);
+      margin: 0 0 px2Rem(20) 0;
+    }
+  }
+
+  &__list {
     padding: vw(0) vw(15) vw(10) vw(18);
 
     @include mq(lg) {
       padding: vwt(10) vwt(20) vwt(10) vwt(20);
     }
   }
-  &__list-item{
-      color: #fff;
-      border: 1px solid #fff;
-      width: vw(133);
-      height: vw(35);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: vw(18);
-      margin: vw(0) vw(0) vw(5) vw(0);
 
-      @include mq() {
-        width: vwt(425);
-        height: vwt(67);
-        font-size: vwt(28);
+  &__list-item {
+    color: #fff;
+    border: 1px solid #fff;
+    width: vw(133);
+    height: vw(35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: vw(18);
+    margin: vw(0) vw(0) vw(5) vw(0);
 
-      }
+    @include mq() {
+      width: vwt(425);
+      height: vwt(67);
+      font-size: vwt(28);
 
-      @include mq(lg) {
-        width: px2Rem(425);
-        height: px2Rem(67);
-        font-size: px2Rem(28);
-      }
     }
+
+    @include mq(lg) {
+      width: px2Rem(425);
+      height: px2Rem(67);
+      font-size: px2Rem(28);
+    }
+  }
 
   &__threespan {
     font-size: vw(10);
@@ -600,10 +603,12 @@ body {
 
   &__details {
     margin-top: vw(15);
+
     @include mq() {
       width: vwt(590);
       margin: vwt(20) auto 0 auto;
     }
+
     @include mq(lg) {
       width: px2Rem(590);
     }
@@ -695,6 +700,7 @@ body {
       width: px2Rem(265);
     }
   }
+
   &__img02 {
     width: vw(37);
     height: vw(46);
@@ -725,19 +731,21 @@ body {
       font-size: px2Rem(42);
     }
   }
-&__wrapper {
-   max-width: vw(780);
-   margin: 0 auto;
+
+  &__wrapper {
+    max-width: vw(780);
+    margin: 0 auto;
 
     @include mq() {
-       max-width: vwt(780);
-       margin: 0 auto;
+      max-width: vwt(780);
+      margin: 0 auto;
     }
 
     @include mq(lg) {
       max-width: px2Rem(780);
     }
   }
+
   &__title {
     font-size: vw(18);
     color: #fff;
@@ -748,6 +756,7 @@ body {
     border-top-left-radius: vw(10);
     border-top-right-radius: vw(10);
     margin: 0;
+
     @include mq() {
       font-size: vwt(28);
       padding: vwt(20) vwt(0);
@@ -767,11 +776,13 @@ body {
     font-size: vw(14);
     color: #4d2b1b;
     margin: vw(0) vw(0) vw(10) vw(0);
+
     @include mq() {
       font-size: vwt(21);
       margin: vwt(0) vwt(0) vwt(20) vwt(0);
       font-weight: 600;
     }
+
     @include mq(lg) {
       font-size: px2Rem(21);
       margin: px2Rem(0) px2Rem(0) px2Rem(20) px2Rem(0);
@@ -783,11 +794,13 @@ body {
     justify-content: center;
     align-items: center;
     gap: vw(20);
+
     @include mq() {
       width: vwt(580);
       margin: 0 auto;
       align-items: center;
     }
+
     @include mq(lg) {
       width: px2Rem(580);
     }
@@ -802,11 +815,13 @@ body {
     width: vw(143);
     text-align: center;
     font-size: vw(14);
+
     @include mq() {
       font-size: vwt(21);
       width: vwt(250);
       text-align: start;
     }
+
     @include mq(lg) {
       font-size: px2Rem(21);
       width: px2Rem(250);
@@ -822,10 +837,12 @@ body {
     color: #4d2b1b;
     text-align: center;
     margin: vw(10) vw(0) vw(30) vw(0);
+
     @include mq() {
       font-size: vwt(24);
       margin: vwt(20) vwt(0) vwt(40) vwt(0);
     }
+
     @include mq(lg) {
       font-size: px2Rem(24);
       margin: px2Rem(20) px2Rem(0) px2Rem(40) px2Rem(0);
@@ -837,25 +854,31 @@ body {
     font-size: vw(14);
     font-weight: 600;
     text-align: center;
+
     @include mq() {
       font-size: vwt(14);
     }
+
     @include mq(lg) {
       font-size: px2Rem(14);
     }
   }
-  &__img{
+
+  &__img {
     width: vw(100);
     height: vw(100);
+
     @include mq() {
       width: vwt(100);
       height: vwt(100);
     }
+
     @include mq(lg) {
       width: px2Rem(100);
       height: px2Rem(100);
     }
   }
+
   &__img03 {
     width: vw(533);
     margin: 0 auto;
@@ -870,18 +893,21 @@ body {
       height: px2Rem(135);
     }
   }
-  &__img04{
+
+  &__img04 {
     width: vw(325);
     margin: 0 auto;
+
     @include mq() {
       width: vwt(533);
       height: vwt(601);
       margin: 0 auto;
     }
+
     @include mq(lg) {
       width: px2Rem(533);
       height: px2Rem(601);
-    }  
+    }
   }
 
   &__imgs {
@@ -893,12 +919,14 @@ body {
   &__figuretwo {
     width: vw(100);
     margin: 0;
+
     @include mq() {
       width: vwt(100);
     }
+
     @include mq(lg) {
       width: px2Rem(100);
-    } 
+    }
   }
 
   &__descriptions {
@@ -909,15 +937,17 @@ body {
     border-bottom-left-radius: vw(10);
     border-bottom-right-radius: vw(10);
     border: 1px solid #fa7da3;
+
     @include mq() {
       font-size: vwt(21);
       padding: vwt(30) vwt(30) vwt(30) vwt(30);
       font-weight: 600;
     }
+
     @include mq(lg) {
       font-size: px2Rem(21);
       padding: px2Rem(30) px2Rem(30) px2Rem(30) px2Rem(30);
-    } 
+    }
   }
 }
 
@@ -929,14 +959,18 @@ body {
     width: vw(350);
     margin: 0 auto;
   }
-  &__heading02{
+
+  &__heading02 {
     color: #333333;
     font-size: vw(18);
     text-align: center;
-   
-    @include mq(){
+
+    @include mq() {
       font-size: vwt(24);
-      
+    }
+
+    @include mq(lg) {
+      font-size: px2Rem(24);
     }
   }
 
@@ -951,28 +985,80 @@ body {
     border: 1px solid #fa7da3;
     border-top-left-radius: vw(10);
     border-top-right-radius: vw(10);
+    @include mq(){
+      font-size: vwt(28);
+      padding: vwt(10) 0 vwt(10 ) 0;
+       border-top-left-radius: vwt(10);
+    border-top-right-radius: vwt(10);
+    }
+    @include mq(lg){
+      font-size: vwt(28);
+      paddin:px2Rem(10) 0 px2Rem(10) 0 ;
+       border-top-left-radius: px2Rem(10);
+    border-top-right-radius: px2Rem(10);
+    }
   }
-
+&__wrapper{
+  @include mq(){
+    display:flex ;
+    justify-content: center;
+    gap: vwt(20);
+  }
+  @include mq(lg){
+    display: flex;
+  }
+}
   &__wrapper-item {
-   
-      border: 1px solid #fa7da3;
-      border-radius: vw(10);
-      margin-bottom: vw(20);
-    
+    border: 1px solid #fa7da3;
+    border-radius: vw(10);
+    margin-bottom: vw(20);
+      @include mq(){
+        width: vwt(350);
+        height: vwt(364);
+      }
+      @include mq(lg){
+        width: px2Rem(350);
+        height: px2Rem(364);
+      }
   }
 
   &__box {
     padding: vw(10) vw(20) vw(10) vw(20);
+    @include mq(){
+      padding: vwt(15) vwt(8) vwt(10) vwt(8);
+    }
+    @include mq(lg){
+      padding: px2Rem(15) px2Rem(8) px2Rem(10) px2Rem(8) ;
+    }
   }
-  &__img{
+
+  &__img {
     width: vw(312);
-    height: vw(206);
     margin: 0 auto;
+    @include mq(){
+      width: vwt(311);
+      height: vwt(210);
+      margin: 0 auto;
+    }
+    @include mq(lg){
+      width: px2Rem(311);
+      height: px2Rem(210);
+    }
+
   }
 
   &__txt {
     font-size: vw(14);
-    margin: 0 0 vw(10) 0
+    margin: 0 0 vw(10) 0;
+    
+     @include  mq(){
+      font-size: vwt(18);
+      margin: 0 0 vwt(5) 0;
+     }
+     @include mq(lg){
+      font-size: px2Rem(18);
+      margin: 0 0 px2Rem(5) 0;
+     }
   }
 }
 

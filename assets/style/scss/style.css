@@ -951,6 +951,11 @@ body {
     font-size: 2.3300970874vw;
   }
 }
+@media screen and (min-width: 1030px) {
+  .course__heading02 {
+    font-size: 1.5rem;
+  }
+}
 .course__title {
   font-size: 4.6153846154vw;
   color: #fa7da3;
@@ -963,22 +968,96 @@ body {
   border-top-left-radius: 2.5641025641vw;
   border-top-right-radius: 2.5641025641vw;
 }
+@media screen and (min-width: 768px) {
+  .course__title {
+    font-size: 2.7184466019vw;
+    padding: 0.9708737864vw 0 0.9708737864vw 0;
+    border-top-left-radius: 0.9708737864vw;
+    border-top-right-radius: 0.9708737864vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .course__title {
+    font-size: 2.7184466019vw;
+    paddin: 0.625rem 0 0.625rem 0;
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .course__wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 1.9417475728vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .course__wrapper {
+    display: flex;
+  }
+}
 .course__wrapper-item {
   border: 1px solid #fa7da3;
   border-radius: 2.5641025641vw;
   margin-bottom: 5.1282051282vw;
 }
+@media screen and (min-width: 768px) {
+  .course__wrapper-item {
+    width: 33.9805825243vw;
+    height: 35.3398058252vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .course__wrapper-item {
+    width: 21.875rem;
+    height: 22.75rem;
+  }
+}
 .course__box {
   padding: 2.5641025641vw 5.1282051282vw 2.5641025641vw 5.1282051282vw;
 }
+@media screen and (min-width: 768px) {
+  .course__box {
+    padding: 1.4563106796vw 0.7766990291vw 0.9708737864vw 0.7766990291vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .course__box {
+    padding: 0.9375rem 0.5rem 0.625rem 0.5rem;
+  }
+}
 .course__img {
   width: 80vw;
-  height: 52.8205128205vw;
   margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .course__img {
+    width: 30.1941747573vw;
+    height: 20.3883495146vw;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .course__img {
+    width: 19.4375rem;
+    height: 13.125rem;
+  }
 }
 .course__txt {
   font-size: 3.5897435897vw;
   margin: 0 0 2.5641025641vw 0;
+}
+@media screen and (min-width: 768px) {
+  .course__txt {
+    font-size: 1.7475728155vw;
+    margin: 0 0 0.4854368932vw 0;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .course__txt {
+    font-size: 1.125rem;
+    margin: 0 0 0.3125rem 0;
+  }
 }
 
 .voice {
