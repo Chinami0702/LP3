@@ -1288,11 +1288,11 @@ body {
 
   @include mq() {
     display: flex;
-    transform: none !important;
+    transform: none;
   }
 
   @include mq(lg) {
-       display: flex;
+     display: flex;
     justify-content: center;
 }
 }
