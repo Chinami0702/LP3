@@ -69,6 +69,8 @@ body {
   border-radius: vw(15.5);
   color: #fff;
   font-size: vw(12);
+  text-decoration: none;
+  
 
   @include mq() {
     font-size: vwt(21);
@@ -125,9 +127,9 @@ body {
     gap: vw(10);
   }
 
-  &__link--primary {
+  &__link-item{
     @include flex-center(107, 31, #fa7da3);
-
+   
     @include mq() {
       width: vwt(189);
       height: vwt(50);
@@ -139,7 +141,7 @@ body {
     }
   }
 
-  &__link--secondary {
+  &__link-items{
     @include flex-center(173.77, 31, #49c43d);
 
     @include mq() {
@@ -257,8 +259,9 @@ body {
       justify-content: center;
 
     }
+  }
 
-    &--top {
+    &__price-item{
       background-color: #fff;
       color: #fa7da3;
       width: vw(47);
@@ -278,7 +281,7 @@ body {
       }
     }
 
-    &--bottom {
+    &__price-text{
       margin: 0;
       font-size: vw(24);
       font-weight: 700;
@@ -294,7 +297,7 @@ body {
       }
     }
 
-    &--left {
+    &__price-box{
       @include mq() {
         width: vwt(110);
       }
@@ -306,7 +309,7 @@ body {
 
     }
 
-    &--right {
+    &__price-description{
       font-size: vw(76);
       font-weight: 700;
       color: #fffd7a;
@@ -321,7 +324,7 @@ body {
         font-size: px2Rem(171);
       }
     }
-  }
+ 
 
   &__description {
     font-size: vw(14);
@@ -494,7 +497,7 @@ body {
     }
   }
 
-  &__span {
+  &__bonus-label{
     font-size: vw(42);
     font-weight: 600;
 
@@ -557,6 +560,7 @@ body {
     height: vw(80);
     border-radius: vw(40);
     position: relative;
+    text-decoration: none;
 
     @include mq() {
       width: vwt(570);
@@ -688,7 +692,7 @@ body {
     }
   }
 
-  &__span {
+  &__course {
     font-size: vw(11);
 
     @include mq() {
@@ -700,7 +704,25 @@ body {
     }
   }
 }
+.section__main{
+    display: flex;
+    justify-content: center;
+    font-size: vw(32);
+    color: #fa7da3;
 
+    @include mq() {
+      font-size: vwt(42);
+      margin-top: vwt(10);
+      margin-bottom: vwt(10);
+    }
+
+    @include mq(lg) {
+      font-size: px2Rem(42);
+      margin-top: px2Rem(10);
+      margin-bottom: px2Rem(10);
+
+    }
+  }
 
 //point
 .point {
@@ -754,25 +776,7 @@ body {
     }
   }
 
-  &__span {
-    display: flex;
-    justify-content: center;
-    font-size: vw(32);
-    color: #fa7da3;
-
-    @include mq() {
-      font-size: vwt(42);
-      margin-top: vwt(10);
-      margin-bottom: vwt(10);
-    }
-
-    @include mq(lg) {
-      font-size: px2Rem(42);
-      margin-top: px2Rem(10);
-      margin-bottom: px2Rem(10);
-
-    }
-  }
+  
 
   &__wrapper {
     max-width: vw(780);

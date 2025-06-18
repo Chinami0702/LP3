@@ -52,7 +52,7 @@ body {
   display: flex;
   gap: 2.5641025641vw;
 }
-.header__link--primary {
+.header__link-item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,30 +62,31 @@ body {
   border-radius: 3.9743589744vw;
   color: #fff;
   font-size: 3.0769230769vw;
+  text-decoration: none;
 }
 @media screen and (min-width: 768px) {
-  .header__link--primary {
+  .header__link-item {
     font-size: 2.0388349515vw;
   }
 }
 @media screen and (min-width: 1030px) {
-  .header__link--primary {
+  .header__link-item {
     font-size: 1.3125rem;
   }
 }
 @media screen and (min-width: 768px) {
-  .header__link--primary {
+  .header__link-item {
     width: 18.3495145631vw;
     height: 4.854368932vw;
   }
 }
 @media screen and (min-width: 1030px) {
-  .header__link--primary {
+  .header__link-item {
     width: 11.8125rem;
     height: 3.125rem;
   }
 }
-.header__link--secondary {
+.header__link-items {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,26 +96,27 @@ body {
   border-radius: 3.9743589744vw;
   color: #fff;
   font-size: 3.0769230769vw;
+  text-decoration: none;
 }
 @media screen and (min-width: 768px) {
-  .header__link--secondary {
+  .header__link-items {
     font-size: 2.0388349515vw;
   }
 }
 @media screen and (min-width: 1030px) {
-  .header__link--secondary {
+  .header__link-items {
     font-size: 1.3125rem;
   }
 }
 @media screen and (min-width: 768px) {
-  .header__link--secondary {
+  .header__link-items {
     width: 29.1262135922vw;
     height: 4.854368932vw;
     font-size: 1.9417475728vw;
   }
 }
 @media screen and (min-width: 1030px) {
-  .header__link--secondary {
+  .header__link-items {
     width: 18.75rem;
     height: 3.125rem;
     font-size: 1.25rem;
@@ -225,7 +227,7 @@ body {
     justify-content: center;
   }
 }
-.intro__price--top {
+.intro__price-item {
   background-color: #fff;
   color: #fa7da3;
   width: 12.0512820513vw;
@@ -235,45 +237,45 @@ body {
   text-align: center;
 }
 @media screen and (min-width: 768px) {
-  .intro__price--top {
+  .intro__price-item {
     width: 10.1941747573vw;
     font-size: 2.8155339806vw;
   }
 }
 @media screen and (min-width: 1030px) {
-  .intro__price--top {
+  .intro__price-item {
     width: 6.5625rem;
     font-size: 1.8125rem;
   }
 }
-.intro__price--bottom {
+.intro__price-text {
   margin: 0;
   font-size: 6.1538461538vw;
   font-weight: 700;
   color: #fff;
 }
 @media screen and (min-width: 768px) {
-  .intro__price--bottom {
+  .intro__price-text {
     width: 10.7766990291vw;
     font-size: 5.2427184466vw;
   }
 }
 @media screen and (min-width: 1030px) {
-  .intro__price--bottom {
+  .intro__price-text {
     font-size: 3.375rem;
   }
 }
 @media screen and (min-width: 768px) {
-  .intro__price--left {
+  .intro__price-box {
     width: 10.6796116505vw;
   }
 }
 @media screen and (min-width: 1030px) {
-  .intro__price--left {
+  .intro__price-box {
     width: 6.875rem;
   }
 }
-.intro__price--right {
+.intro__price-description {
   font-size: 19.4871794872vw;
   font-weight: 700;
   color: #fffd7a;
@@ -281,12 +283,12 @@ body {
   line-height: 1;
 }
 @media screen and (min-width: 768px) {
-  .intro__price--right {
+  .intro__price-description {
     font-size: 16.6019417476vw;
   }
 }
 @media screen and (min-width: 1030px) {
-  .intro__price--right {
+  .intro__price-description {
     font-size: 10.6875rem;
   }
 }
@@ -468,17 +470,17 @@ body {
     font-size: 2.6875rem;
   }
 }
-.note__span {
+.note__bonus-label {
   font-size: 10.7692307692vw;
   font-weight: 600;
 }
 @media screen and (min-width: 768px) {
-  .note__span {
+  .note__bonus-label {
     font-size: 6.5048543689vw;
   }
 }
 @media screen and (min-width: 1030px) {
-  .note__span {
+  .note__bonus-label {
     font-size: 4.1875rem;
   }
 }
@@ -532,6 +534,7 @@ body {
   height: 20.5128205128vw;
   border-radius: 10.2564102564vw;
   position: relative;
+  text-decoration: none;
 }
 @media screen and (min-width: 768px) {
   .btn__link {
@@ -663,17 +666,38 @@ body {
     font-size: 1.425rem;
   }
 }
-.btn__span {
+.btn__course {
   font-size: 2.8205128205vw;
 }
 @media screen and (min-width: 768px) {
-  .btn__span {
+  .btn__course {
     font-size: 1.7281553398vw;
   }
 }
 @media screen and (min-width: 1030px) {
-  .btn__span {
+  .btn__course {
     font-size: 1.1125rem;
+  }
+}
+
+.section__main {
+  display: flex;
+  justify-content: center;
+  font-size: 8.2051282051vw;
+  color: #fa7da3;
+}
+@media screen and (min-width: 768px) {
+  .section__main {
+    font-size: 4.0776699029vw;
+    margin-top: 0.9708737864vw;
+    margin-bottom: 0.9708737864vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .section__main {
+    font-size: 2.625rem;
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
   }
 }
 
@@ -728,26 +752,6 @@ body {
   .point__img02 {
     width: 3.125rem;
     height: 3.8125rem;
-  }
-}
-.point__span {
-  display: flex;
-  justify-content: center;
-  font-size: 8.2051282051vw;
-  color: #fa7da3;
-}
-@media screen and (min-width: 768px) {
-  .point__span {
-    font-size: 4.0776699029vw;
-    margin-top: 0.9708737864vw;
-    margin-bottom: 0.9708737864vw;
-  }
-}
-@media screen and (min-width: 1030px) {
-  .point__span {
-    font-size: 2.625rem;
-    margin-top: 0.625rem;
-    margin-bottom: 0.625rem;
   }
 }
 .point__wrapper {
