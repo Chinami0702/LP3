@@ -709,6 +709,7 @@ body {
     justify-content: center;
     font-size: vw(32);
     color: #fa7da3;
+    font-weight: 700;
 
     @include mq() {
       font-size: vwt(42);
@@ -739,6 +740,8 @@ body {
     font-size: vw(18);
     color: #4d2b1b;
     justify-content: center;
+    display: flex;
+    align-items: center;
 
     @include mq() {
       font-size: vwt(18);
@@ -748,6 +751,11 @@ body {
       font-size: px2Rem(18);
     }
   }
+  .point__heading img,
+.point__heading span {
+  margin: 0 4px; 
+  vertical-align: middle; 
+}
 
   &__img01 {
     width: vw(197);

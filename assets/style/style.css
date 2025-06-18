@@ -685,6 +685,7 @@ body {
   justify-content: center;
   font-size: 8.2051282051vw;
   color: #fa7da3;
+  font-weight: 700;
 }
 @media screen and (min-width: 768px) {
   .section__main {
@@ -714,6 +715,8 @@ body {
   font-size: 4.6153846154vw;
   color: #4d2b1b;
   justify-content: center;
+  display: flex;
+  align-items: center;
 }
 @media screen and (min-width: 768px) {
   .point__heading {
@@ -724,6 +727,11 @@ body {
   .point__heading {
     font-size: 1.125rem;
   }
+}
+.point .point__heading img,
+.point .point__heading span {
+  margin: 0 4px;
+  vertical-align: middle;
 }
 .point__img01 {
   width: 50.5128205128vw;
