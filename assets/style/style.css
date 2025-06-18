@@ -21,6 +21,20 @@ body {
 .header__btn {
   margin-left: 2.5641025641vw;
 }
+@media screen and (min-width: 768px) {
+  .header__btn {
+    margin-left: 0.4854368932vw;
+    width: 1.1650485437vw;
+    height: 1.5533980583vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .header__btn {
+    margin-left: 0.3125rem;
+    width: 0.75rem;
+    height: 1rem;
+  }
+}
 .header__container {
   max-width: 94.6153846154vw;
   margin: 0 auto;
@@ -55,6 +69,16 @@ body {
 .header__links {
   display: flex;
   gap: 3vw;
+}
+@media screen and (min-width: 768px) {
+  .header__links {
+    gap: 1.067961165vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .header__links {
+    gap: 0.6875rem;
+  }
 }
 .header__link-item {
   display: flex;
@@ -133,11 +157,13 @@ body {
 @media screen and (min-width: 768px) {
   .header__span {
     font-size: 1.6504854369vw;
+    width: 5.8252427184vw;
   }
 }
 @media screen and (min-width: 1030px) {
   .header__span {
     font-size: 1.0625rem;
+    width: 3.75rem;
   }
 }
 
@@ -181,13 +207,13 @@ body {
 }
 @media screen and (min-width: 768px) {
   .intro__title {
-    width: 51.4563106796vw;
+    width: 67.9611650485vw;
     margin: 0;
   }
 }
 @media screen and (min-width: 1030px) {
   .intro__title {
-    width: 33.125rem;
+    width: 43.75rem;
   }
 }
 .intro__span {
@@ -204,6 +230,16 @@ body {
 @media screen and (min-width: 1030px) {
   .intro__subspan {
     font-size: 5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .intro__feacher {
+    width: 43.6893203883vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .intro__feacher {
+    width: 28.125rem;
   }
 }
 .intro__price {
@@ -247,12 +283,14 @@ body {
   .intro__price-item {
     width: 10.1941747573vw;
     font-size: 2.8155339806vw;
+    padding: 0.1941747573vw 0;
   }
 }
 @media screen and (min-width: 1030px) {
   .intro__price-item {
     width: 6.5625rem;
     font-size: 1.8125rem;
+    padding: 0.125rem 0;
   }
 }
 .intro__price-text {
@@ -310,14 +348,14 @@ body {
 @media screen and (min-width: 768px) {
   .intro__description {
     font-size: 2.5242718447vw;
-    width: 48.5436893204vw;
+    width: 37.8640776699vw;
     margin: 0 0 1.9417475728vw 0;
   }
 }
 @media screen and (min-width: 1030px) {
   .intro__description {
     font-size: 1.625rem;
-    width: 31.25rem;
+    width: 24.375rem;
     margin: 0 0 1.25rem 0;
   }
 }
@@ -326,16 +364,26 @@ body {
 }
 @media screen and (min-width: 768px) {
   .intro__list {
-    padding: 0.9708737864vw 0vw 0.9708737864vw 0vw;
+    padding: 0.9708737864vw 0vw 3.8834951456vw 0vw;
   }
 }
 @media screen and (min-width: 1030px) {
   .intro__list {
-    padding: 0.625rem 0rem 0.625rem 0rem;
+    padding: 0.625rem 0rem 2.5rem 0rem;
   }
 }
 .intro__list-wrap {
   padding: 0 0 0 2.8205128205vw;
+}
+@media screen and (min-width: 768px) {
+  .intro__list-wrap {
+    padding: 0 0 0 2.3300970874vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .intro__list-wrap {
+    padding: 0 0 0 1.5rem;
+  }
 }
 .intro__list-item {
   color: #fff;
@@ -353,7 +401,7 @@ body {
     width: 41.2621359223vw;
     height: 6.5048543689vw;
     font-size: 2.7184466019vw;
-    margin: 0vw 0vw 2.9126213592vw 0vw;
+    margin: 0vw 0vw 1.9417475728vw 0vw;
   }
 }
 @media screen and (min-width: 1030px) {
@@ -361,7 +409,7 @@ body {
     width: 26.5625rem;
     height: 4.1875rem;
     font-size: 1.75rem;
-    margin: 0rem 0rem 1.875rem 0rem;
+    margin: 0rem 0rem 1.25rem 0rem;
   }
 }
 .intro__threespan {
@@ -429,13 +477,35 @@ body {
 }
 .note .slash {
   display: inline-block;
-  width: 25px;
-  height: 2px;
+  width: 6.4102564103vw;
+  height: 0.5128205128vw;
   background-color: #f78da7;
+}
+@media screen and (min-width: 768px) {
+  .note .slash {
+    width: 0.3174757282vw;
+    height: 4.2912621359vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .note .slash {
+    width: 0.204375rem;
+    height: 2.7625rem;
+  }
 }
 .note .slash.left {
   transform: rotate(60deg);
   font-weight: 200;
+}
+@media screen and (min-width: 768px) {
+  .note .slash.left {
+    font-weight: 400;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .note .slash.left {
+    font-weight: 400;
+  }
 }
 .note .slash.right {
   transform: rotate(-60deg);
@@ -576,6 +646,9 @@ body {
     width: 35.625rem;
     height: 8.125rem;
   }
+}
+.btn__link:hover {
+  background-color: #40e02f;
 }
 .btn__click {
   flex: 1;
