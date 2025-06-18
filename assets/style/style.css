@@ -1152,7 +1152,7 @@ body {
 .voice__container {
   max-width: 307.6923076923vw;
   margin: 0 auto;
-  padding: 2.5641025641vw 2.5641025641vw 2.5641025641vw 2.5641025641vw;
+  padding: 2.5641025641vw 0vw 2.5641025641vw 0vw;
 }
 .voice__title {
   font-size: 1.125rem;

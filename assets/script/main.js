@@ -8,7 +8,7 @@ function initSwiper() {
       swiperInstance = new Swiper('.voice__swiper', {
         loop: true,
         centeredSlides: true,
-        slidesPerView: 1,
+        slidesPerView: 1.4,
         spaceBetween: 20,
         pagination: {
           el: '.swiper-pagination',
