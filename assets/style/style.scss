@@ -834,18 +834,21 @@ body {
     border-bottom-right-radius: vw(10);
     margin-bottom: vw(31);
 
+
     @include mq() {
       margin-bottom: vwt(50);
       border-bottom-left-radius: vwt(10);
       border-bottom-right-radius: vwt(10);
+     
     }
 
     @include mq(lg) {
       margin-bottom: px2Rem(50);
       border-bottom-left-radius: px2Rem(10);
       border-bottom-right-radius: px2Rem(10);
-    }
+      
   }
+}
 
   &__description {
     font-size: vw(14);
@@ -868,16 +871,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: vw(20);
+    gap: vw(10);
+    max-width: vw(400);
+
 
     @include mq() {
       width: vwt(580);
       margin: 0 auto;
       align-items: center;
+      max-width: vwt(250);
     }
 
     @include mq(lg) {
       width: px2Rem(580);
+      max-width: px2Rem(250);
     }
   }
 
@@ -885,21 +892,29 @@ body {
     width: vw(143);
     margin: 0;
   }
-
+&__wrap{
+  width: vw(130);
+  @include mq(){
+    width: vwt(330);
+  }
+  @include mq(lg){
+    width: px2Rem(330);
+  }
+}
   &__txt{
-    width: vw(143);
+    width: vw(128);
     text-align: center;
     font-size: vw(14);
 
     @include mq() {
       font-size: vwt(21);
-      width: vwt(250);
+      width: vwt(340);
       text-align: center;
     }
 
     @include mq(lg) {
       font-size: px2Rem(21);
-      width: px2Rem(250);
+      width: px2Rem(340);
     }
   }
 

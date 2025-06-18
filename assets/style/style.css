@@ -848,40 +848,56 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5.1282051282vw;
+  gap: 2.5641025641vw;
+  max-width: 102.5641025641vw;
 }
 @media screen and (min-width: 768px) {
   .point__flex {
     width: 56.3106796117vw;
     margin: 0 auto;
     align-items: center;
+    max-width: 24.2718446602vw;
   }
 }
 @media screen and (min-width: 1030px) {
   .point__flex {
     width: 36.25rem;
+    max-width: 15.625rem;
   }
 }
 .point__figure {
   width: 36.6666666667vw;
   margin: 0;
 }
+.point__wrap {
+  width: 33.3333333333vw;
+}
+@media screen and (min-width: 768px) {
+  .point__wrap {
+    width: 32.0388349515vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .point__wrap {
+    width: 20.625rem;
+  }
+}
 .point__txt {
-  width: 36.6666666667vw;
+  width: 32.8205128205vw;
   text-align: center;
   font-size: 3.5897435897vw;
 }
 @media screen and (min-width: 768px) {
   .point__txt {
     font-size: 2.0388349515vw;
-    width: 24.2718446602vw;
+    width: 33.0097087379vw;
     text-align: center;
   }
 }
 @media screen and (min-width: 1030px) {
   .point__txt {
     font-size: 1.3125rem;
-    width: 15.625rem;
+    width: 21.25rem;
   }
 }
 .point__description {
