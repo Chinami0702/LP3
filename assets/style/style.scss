@@ -521,24 +521,7 @@ body {
   font-weight: 200;
 }
 
-  // &__heading {
-  //   margin: 0;
-  //   font-size: vw(21);
-  //   color: #fa7da3;
-  //   font-weight: 400;
-  //   text-align: center;
-  //   margin-bottom: vw(13);
-
-  //   @include mq() {
-  //     font-size: vwt(34);
-  //     margin-bottom: vwt(20);
-  //   }
-
-  //   @include mq(lg) {
-  //     font-size: px2Rem(34);
-  //     margin-bottom: px2Rem(20);
-  //   }
-  // }
+ 
 
   &__title {
     width: auto;
@@ -1477,9 +1460,9 @@ body {
   background: #fa7da3;
   opacity: 1;
 }
-// .btn-three{
-//   padding: vw(30) vw(10) vw(40) vw(10) ;
-// }
+.btn-three{
+  padding: vw(30) vw(10) vw(40) vw(10) ;
+}
 
 //fotoer
 .footer {
