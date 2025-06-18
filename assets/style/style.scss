@@ -199,7 +199,6 @@ body {
       background-size: px2Rem(486);
       padding: px2Rem(0) px2Rem(0) px2Rem(0) px2Rem(0);
       max-width: px2Rem(974);
-      margin: 0 auto;
     }
   }
 
@@ -217,7 +216,6 @@ body {
 
     @include mq(lg) {
       width: px2Rem(530);
-      margin: 0;
     }
   }
 
@@ -256,7 +254,6 @@ body {
       width: px2Rem(430);
       height: px2Rem(222);
       padding: px2Rem(0) px2Rem(22) px2Rem(32) px2Rem(25);
-      justify-content: center;
 
     }
   }
@@ -337,7 +334,7 @@ body {
     @include mq() {
       font-size: vwt(26);
       width: vwt(500);
-      margin: 0 0 vwt(10) 0;
+      margin: 0 0 vwt(20) 0;
     }
 
     @include mq(lg) {
@@ -456,7 +453,6 @@ body {
 
     @include mq(lg) {
       width: px2Rem(550);
-      margin: 0 auto;
     }
   }
 
@@ -571,7 +567,6 @@ body {
     @include mq(lg) {
       width: px2Rem(570);
       height: px2Rem(130);
-      margin: 0 auto;
     }
 
   }
@@ -675,7 +670,6 @@ body {
 
     @include mq(lg) {
       font-size: px2Rem(22.8);
-      justify-content: center;
     }
   }
 
@@ -1297,9 +1291,6 @@ body {
   @include mq(lg) {
     width: 100%;
     max-width: px2Rem(1030);
-    height: auto;
-    margin: 0 auto;
-    padding-bottom: 0;
   }
 }
 }
@@ -1317,8 +1308,6 @@ body {
   }
 
   @include mq(lg) {
-    justify-content: center;
-    flex-wrap: wrap;
     gap: px2Rem(20);
     transform: none !important;
   }
