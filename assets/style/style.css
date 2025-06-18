@@ -858,20 +858,20 @@ body {
   width: 36.6666666667vw;
   margin: 0;
 }
-.point__figcaption {
+.point__txt {
   width: 36.6666666667vw;
   text-align: center;
   font-size: 3.5897435897vw;
 }
 @media screen and (min-width: 768px) {
-  .point__figcaption {
+  .point__txt {
     font-size: 2.0388349515vw;
     width: 24.2718446602vw;
-    text-align: start;
+    text-align: center;
   }
 }
 @media screen and (min-width: 1030px) {
-  .point__figcaption {
+  .point__txt {
     font-size: 1.3125rem;
     width: 15.625rem;
   }
@@ -897,19 +897,19 @@ body {
     margin: 1.25rem 0rem 2.5rem 0rem;
   }
 }
-.point__figcaptiontwo {
+.point__figcaption {
   color: #fa7da3;
   font-size: 3.5897435897vw;
   font-weight: 600;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
-  .point__figcaptiontwo {
+  .point__figcaption {
     font-size: 1.359223301vw;
   }
 }
 @media screen and (min-width: 1030px) {
-  .point__figcaptiontwo {
+  .point__figcaption {
     font-size: 0.875rem;
   }
 }

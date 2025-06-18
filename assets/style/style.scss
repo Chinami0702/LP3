@@ -878,7 +878,7 @@ body {
     margin: 0;
   }
 
-  &__figcaption {
+  &__txt{
     width: vw(143);
     text-align: center;
     font-size: vw(14);
@@ -886,7 +886,7 @@ body {
     @include mq() {
       font-size: vwt(21);
       width: vwt(250);
-      text-align: start;
+      text-align: center;
     }
 
     @include mq(lg) {
@@ -916,7 +916,7 @@ body {
     }
   }
 
-  &__figcaptiontwo {
+  &__figcaption{
     color: #fa7da3;
     font-size: vw(14);
     font-weight: 600;
