@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   padding: 0;
@@ -5,7 +6,7 @@ body {
 }
 
 .header {
-  padding: 3.3333333333vw 3.0769230769vw;
+  padding: 2.6vw 2.8vw;
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -17,11 +18,14 @@ body {
     padding: 1.25rem 0.125rem 1.25rem 0.125rem;
   }
 }
+.header__btn {
+  margin-left: 2.5641025641vw;
+}
 .header__container {
   max-width: 94.6153846154vw;
   margin: 0 auto;
   display: flex;
-  gap: 1.5384615385vw;
+  gap: 1vw;
   align-items: center;
 }
 @media screen and (min-width: 768px) {
@@ -50,7 +54,7 @@ body {
 }
 .header__links {
   display: flex;
-  gap: 2.5641025641vw;
+  gap: 3vw;
 }
 .header__link-item {
   display: flex;
@@ -124,6 +128,7 @@ body {
 }
 .header__span {
   font-size: 2.5641025641vw;
+  width: 8.9743589744vw;
 }
 @media screen and (min-width: 768px) {
   .header__span {
@@ -171,7 +176,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2.5641025641vw 0vw 2.5641025641vw 2.5641025641vw;
+  margin: 5vw 0vw 2.5641025641vw 5vw;
   width: 43.5897435897vw;
 }
 @media screen and (min-width: 768px) {
@@ -204,10 +209,12 @@ body {
 .intro__price {
   background-color: rgba(255, 255, 255, 0.3);
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
-  padding: 2.5641025641vw 5.8974358974vw 5.3846153846vw 6.6666666667vw;
-  margin: 0 auto;
+  padding: 2.9vw 5.8974358974vw 5.3846153846vw 7vw;
+  margin-left: auto;
+  width: 48.2051282051vw;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.08);
 }
 @media screen and (min-width: 768px) {
   .intro__price {
@@ -224,11 +231,14 @@ body {
     padding: 0rem 1.375rem 2rem 1.5625rem;
   }
 }
+.intro__price-box {
+  margin-top: 2.5641025641vw;
+}
 .intro__price-item {
   background-color: #fff;
   color: #fa7da3;
   width: 12.0512820513vw;
-  margin: 0;
+  padding: 0.7692307692vw 0;
   font-size: 3.3333333333vw;
   font-weight: 700;
   text-align: center;
@@ -292,10 +302,10 @@ body {
 .intro__description {
   font-size: 3.5897435897vw;
   font-family: Outfit;
-  margin: 0 0 5.1282051282vw 0;
+  margin: 1.5vw 0 5.1282051282vw 0;
   color: #fff;
   text-align: end;
-  width: 33.3333333333vw;
+  width: 42.5vw;
 }
 @media screen and (min-width: 768px) {
   .intro__description {
@@ -312,7 +322,7 @@ body {
   }
 }
 .intro__list {
-  padding: 0vw 3.8461538462vw 2.5641025641vw 4.6153846154vw;
+  padding: 0vw 3.8461538462vw 3.5vw 4.6153846154vw;
 }
 @media screen and (min-width: 768px) {
   .intro__list {
@@ -324,6 +334,9 @@ body {
     padding: 0.625rem 0rem 0.625rem 0rem;
   }
 }
+.intro__list-wrap {
+  padding: 0 0 0 2.8205128205vw;
+}
 .intro__list-item {
   color: #fff;
   border: 1px solid #fff;
@@ -333,7 +346,7 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 4.6153846154vw;
-  margin: 0vw 0vw 1.2820512821vw 0vw;
+  margin: 0vw 0vw 3vw 0vw;
 }
 @media screen and (min-width: 768px) {
   .intro__list-item {
@@ -367,7 +380,7 @@ body {
 
 .note {
   background-color: #fffedd;
-  padding: 5.8974358974vw 4.8717948718vw 4.1025641026vw 5.3846153846vw;
+  padding: 5.3vw 4.8717948718vw 3.5vw 5.3846153846vw;
 }
 @media screen and (min-width: 768px) {
   .note {
@@ -394,12 +407,13 @@ body {
   }
 }
 .note__heading {
-  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 5.3846153846vw;
-  color: #fa7da3;
+  color: #f78da7; /* ピンク色 */
+  font-weight: bold;
   font-weight: 400;
-  text-align: center;
-  margin-bottom: 3.3333333333vw;
 }
 @media screen and (min-width: 768px) {
   .note__heading {
@@ -413,8 +427,23 @@ body {
     margin-bottom: 1.25rem;
   }
 }
+.note .slash {
+  display: inline-block;
+  width: 25px;
+  height: 2px;
+  background-color: #f78da7;
+}
+.note .slash.left {
+  transform: rotate(60deg);
+  font-weight: 200;
+}
+.note .slash.right {
+  transform: rotate(-60deg);
+  font-weight: 200;
+}
 .note__title {
   width: auto;
+  margin-top: 2.5641025641vw;
 }
 @media screen and (min-width: 768px) {
   .note__title {
@@ -455,6 +484,7 @@ body {
   border: 1px solid #fa7da3;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  line-height: 1.4;
 }
 @media screen and (min-width: 768px) {
   .note__subtitle {
@@ -484,6 +514,7 @@ body {
   font-size: 2.5641025641vw;
   text-align: center;
   font-weight: 600;
+  margin-top: 2.0512820513vw;
 }
 @media screen and (min-width: 768px) {
   .note__deatail {
@@ -497,7 +528,7 @@ body {
 }
 
 .btn {
-  padding: 4.8717948718vw 5.1282051282vw 7.6923076923vw 5.1282051282vw;
+  padding: 3.8vw 5.1282051282vw 7.6923076923vw 5.1282051282vw;
 }
 .btn__container {
   max-width: 90vw;
@@ -508,7 +539,8 @@ body {
   font-size: 5.3846153846vw;
   color: #fa7da3;
   text-align: center;
-  margin: 0vw 0 5.1282051282vw 0;
+  margin: 0vw 0 2vw 1.7vw;
+  letter-spacing: 0.5vw;
 }
 @media screen and (min-width: 768px) {
   .btn__title {
@@ -554,6 +586,7 @@ body {
   cursor: pointer;
   margin: 0;
   position: relative;
+  letter-spacing: 0.4vw;
 }
 @media screen and (min-width: 768px) {
   .btn__click {
@@ -568,8 +601,8 @@ body {
 .btn__arrow {
   position: absolute;
   width: 2.5641025641vw;
-  height: 3.5897435897vw;
-  margin-right: 2.5641025641vw;
+  height: 5vw;
+  margin-right: 8vw;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
@@ -597,8 +630,8 @@ body {
   text-align: center;
   border-top: 1px solid #50bfff;
   border-bottom: 1px solid #50bfff;
-  padding: 2.5641025641vw 0;
-  margin: 0 15.3846153846vw;
+  padding: 1.7vw 0;
+  letter-spacing: 0.4vw;
 }
 @media screen and (min-width: 768px) {
   .btn__txt {
@@ -613,7 +646,8 @@ body {
   }
 }
 .btn__details {
-  margin-top: 3.8461538462vw;
+  margin-top: 2.8vw;
+  font-weight: 400;
 }
 @media screen and (min-width: 768px) {
   .btn__details {
@@ -632,7 +666,7 @@ body {
 }
 .btn__subtitle {
   font-size: 3.5897435897vw;
-  font-weight: 400;
+  font-weight: 600;
   margin: 0;
 }
 @media screen and (min-width: 768px) {
@@ -649,6 +683,7 @@ body {
 .btn__subtxt {
   font-size: 3.5897435897vw;
   margin: 0;
+  font-weight: 600;
 }
 @media screen and (min-width: 768px) {
   .btn__subtxt {

@@ -83,7 +83,7 @@ body {
 }
 
 .header {
-  padding: vw(13) vw(12);
+  padding: 2.6vw 2.8vw;
 
   @include mq() {
     padding: vwt(20) vwt(2) vwt(20) vwt(2);
@@ -92,12 +92,15 @@ body {
   @include mq(lg) {
     padding: px2Rem(20) px2Rem(2) px2Rem(20) px2Rem(2);
   }
+  &__btn{
+    margin-left: vw(10);
+  }
 
   &__container {
     max-width: vw(369);
     margin: 0 auto;
     display: flex;
-    gap: vw(6);
+    gap: 1vw;
     align-items: center;
 
     @include mq() {
@@ -124,7 +127,7 @@ body {
 
   &__links {
     display: flex;
-    gap: vw(10);
+    gap: 3vw;
   }
 
   &__link-item{
@@ -159,6 +162,7 @@ body {
 
   &__span {
     font-size: vw(10);
+    width: vw(35);
 
     @include mq() {
       font-size: vwt(17);
@@ -206,7 +210,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: vw(10) vw(0) vw(10) vw(10);
+    margin: 5vw vw(0) vw(10) 5vw;
     width: vw(170);
 
     @include mq() {
@@ -238,10 +242,12 @@ body {
   &__price {
     background-color: rgba(255, 255, 255, 0.3);
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between;
-    padding: vw(10) vw(23) vw(21) vw(26);
-    margin: 0 auto;
+    padding: 2.9vw vw(23) vw(21) 7vw;
+    margin-left:  auto;
+    width: vw(188);
+    box-shadow: 3px 3px rgba(0,0,0, 0.08);
 
     @include mq() {
       width: vwt(430);
@@ -257,12 +263,15 @@ body {
 
     }
   }
+  &__price-box{
+    margin-top: vw(10);
+  }
 
     &__price-item{
       background-color: #fff;
       color: #fa7da3;
       width: vw(47);
-      margin: 0;
+      padding: vw(3) 0;
       font-size: vw(13);
       font-weight: 700;
       text-align: center;
@@ -326,10 +335,10 @@ body {
   &__description {
     font-size: vw(14);
     font-family: Outfit;
-    margin: 0 0 vw(20) 0;
+    margin: 1.5vw 0 vw(20) 0;
     color: #fff;
     text-align: end;
-    width: vw(130);
+    width: 42.5vw;
 
     @include mq() {
       font-size: vwt(26);
@@ -345,7 +354,7 @@ body {
   }
 
   &__list {
-    padding: vw(0) vw(15) vw(10) vw(18);
+    padding: vw(0) vw(15) 3.5vw vw(18);
 
     @include mq() {
       padding: vwt(10) vwt(0) vwt(10) vwt(0);
@@ -355,7 +364,9 @@ body {
       padding: px2Rem(10) px2Rem(0) px2Rem(10) px2Rem(0);
     }
   }
-
+&__list-wrap{
+  padding: 0 0 0 vw(11);
+}
   &__list-item {
     color: #fff;
     border: 1px solid #fff;
@@ -365,7 +376,7 @@ body {
     align-items: center;
     justify-content: center;
     font-size: vw(18);
-    margin: vw(0) vw(0) vw(5) vw(0);
+    margin: vw(0) vw(0) 3vw vw(0);
 
     @include mq() {
       width: vwt(425);
@@ -401,7 +412,7 @@ body {
 //note
 .note {
   background-color: #fffedd;
-  padding: vw(23) vw(19) vw(16) vw(21);
+  padding: 5.3vw vw(19) 3.5vw vw(21);
 
   @include mq() {
     padding: vwt(36) vwt(30) vwt(25) vwt(30);
@@ -423,16 +434,15 @@ body {
       max-width: px2Rem(550);
     }
   }
-
   &__heading {
-    margin: 0;
-    font-size: vw(21);
-    color: #fa7da3;
-    font-weight: 400;
-    text-align: center;
-    margin-bottom: vw(13);
-
-    @include mq() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: vw(21);
+  color: #f78da7; /* ピンク色 */
+  font-weight: bold;
+  font-weight: 400;
+      @include mq() {
       font-size: vwt(34);
       margin-bottom: vwt(20);
     }
@@ -441,10 +451,47 @@ body {
       font-size: px2Rem(34);
       margin-bottom: px2Rem(20);
     }
-  }
+}
+
+.slash {
+  display: inline-block;
+  width: 25px;
+  height: 2px;
+  background-color: #f78da7;
+}
+
+.slash.left {
+  transform: rotate(60deg);
+  font-weight: 200;
+}
+
+.slash.right {
+  transform: rotate(-60deg);
+  font-weight: 200;
+}
+
+  // &__heading {
+  //   margin: 0;
+  //   font-size: vw(21);
+  //   color: #fa7da3;
+  //   font-weight: 400;
+  //   text-align: center;
+  //   margin-bottom: vw(13);
+
+  //   @include mq() {
+  //     font-size: vwt(34);
+  //     margin-bottom: vwt(20);
+  //   }
+
+  //   @include mq(lg) {
+  //     font-size: px2Rem(34);
+  //     margin-bottom: px2Rem(20);
+  //   }
+  // }
 
   &__title {
     width: auto;
+    margin-top: vw(10);
 
     @include mq() {
       width: vwt(550);
@@ -483,6 +530,7 @@ body {
     border: 1px solid #fa7da3;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    line-height: 1.4;
 
     @include mq() {
       font-size: vwt(43);
@@ -510,6 +558,7 @@ body {
     font-size: vw(10);
     text-align: center;
     font-weight: 600;
+    margin-top: vw(8);
 
     @include mq() {
       font-size: vwt(14);
@@ -523,7 +572,7 @@ body {
 
 //btn
 .btn {
-  padding: vw(19) vw(20) vw(30) vw(20);
+  padding: 3.8vw vw(20) vw(30) vw(20);
 
   &__container {
     max-width: vw(351);
@@ -535,7 +584,8 @@ body {
     font-size: vw(21);
     color: #fa7da3;
     text-align: center;
-    margin: vw(0) 0 vw(20) 0;
+    margin: vw(0) 0 2vw 1.7vw;
+    letter-spacing: .5vw;
 
     @include mq() {
       font-size: vwt(34);
@@ -580,6 +630,7 @@ body {
     cursor: pointer;
     margin: 0;
     position: relative;
+    letter-spacing: .4vw;
 
     @include mq() {
       font-size: vwt(34);
@@ -593,8 +644,8 @@ body {
   &__arrow {
     position: absolute;
     width: vw(10);
-    height: vw(14);
-    margin-right: vw(10);
+    height: 5vw;
+    margin-right: 8vw;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
@@ -623,8 +674,8 @@ body {
     text-align: center;
     border-top: 1px solid #50bfff;
     border-bottom: 1px solid #50bfff;
-    padding: vw(10) 0;
-    margin: 0 vw(60);
+    padding: 1.7vw 0;
+    letter-spacing: .4vw;
 
     @include mq() {
       font-size: vwt(28);
@@ -639,7 +690,8 @@ body {
 
 
   &__details {
-    margin-top: vw(15);
+    margin-top: 2.8vw;
+    font-weight: 400;
 
     @include mq() {
       width: vwt(590);
@@ -660,7 +712,7 @@ body {
 
   &__subtitle {
     font-size: vw(14);
-    font-weight: 400;
+    font-weight: 600;
     margin: 0;
 
     @include mq() {
@@ -676,6 +728,7 @@ body {
   &__subtxt {
     font-size: vw(14);
     margin: 0;
+    font-weight: 600;
 
     @include mq() {
       font-size: vwt(22.8);
