@@ -679,6 +679,7 @@ padding: px2Rem(50) px2Rem(20) px2Rem(65) px2Rem(10);
     background-color: #49c43d;
     width: vw(350);
     height: vw(80);
+    margin: 0 auto;
     border-radius: vw(40);
     position: relative;
     text-decoration: none;
@@ -1470,6 +1471,7 @@ margin: px2Rem(10) 0 px2Rem(35) 0;
 }
  .section__main-item{
   gap: vw(10);
+   margin: vw(5) 0 vw(20) 0;
   @include mq(){
     gap: vwt(21);
     margin: vwt(39.7) 0 vwt(27) 0;
@@ -1516,6 +1518,9 @@ margin: px2Rem(10) 0 px2Rem(35) 0;
       border-radius: px2Rem(10) px2Rem(10) 0 0;
     }
   }
+  &__box{
+     margin-left: vw(10); 
+  }
   
 
   &__wrap {
@@ -1524,8 +1529,8 @@ margin: px2Rem(10) 0 px2Rem(35) 0;
     border-radius: 0 0 10px 10px;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: vw(10);
-    padding: vw(20);
 
     @include mq() {
       padding: vwt(10) vwt(20);
@@ -1540,7 +1545,10 @@ margin: px2Rem(10) 0 px2Rem(35) 0;
     }
   }
   &__wrap-item{
-    padding: vw(30);
+    padding: vw(10) vw(10) vw(10) vw(10);
+  }
+  &__wrap-spacial{
+    padding: vw(10);
   }
 
   &__box {
@@ -1572,7 +1580,6 @@ margin: px2Rem(10) 0 px2Rem(35) 0;
   &__txt {
     color: #fa7da3;
     font-weight: 600;
-    margin-top: vw(5);
     width: vw(150);
     font-size: vw(16);
 
@@ -1591,9 +1598,10 @@ margin: px2Rem(10) 0 px2Rem(35) 0;
 
   &__text {
     color: #333;
+    width: vw(168);
     font-size: vw(14);
     font-weight: 600;
-    margin-top: vw(5);
+    margin: vw(5) vw(0) 0 vw(0);
 
     @include mq() {
       width: vwt(160);
@@ -1629,7 +1637,9 @@ margin: px2Rem(10) 0 px2Rem(35) 0;
   overflow: hidden;
   padding-bottom: vw(40);
 }
-
+.swiper {
+  --swiper-pagination-top: vw(30);
+}
 .swiper-wrapper {
   display: flex;
 
@@ -1647,13 +1657,17 @@ margin: px2Rem(10) 0 px2Rem(35) 0;
     display: none;
   }
 }
-
+.swiper-pagination {
+  --swiper-pagination-bullet-horizontal-gap: 7px;
+}
 .swiper-pagination-bullet {
   background: #ffd2d2;
   opacity: 0.6;
-  width: vw(12);
-  height: vw(12);
+  width: vw(14);
+  height: vw(14);
+  margin: vw(10);
 }
+
 
 .swiper-pagination-bullet-active {
   background: #fa7da3;
@@ -1661,7 +1675,7 @@ margin: px2Rem(10) 0 px2Rem(35) 0;
 }
 
 .btn-three {
-  padding: vw(30) vw(10) vw(40) vw(10);
+  padding: vw(30) vw(10) vw(45) vw(10);
 }
 
 //fotoer

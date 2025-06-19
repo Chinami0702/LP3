@@ -5,7 +5,7 @@ new Swiper(".voice__swiper", {
   centeredSlides: true,
   initialSlide: 1,
 
-  slidesPerView: 1.4,
+  slidesPerView: 1.3,
   spaceBetween: 20,
   pagination: {
     el: ".swiper-pagination",
