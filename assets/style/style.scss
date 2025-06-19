@@ -90,6 +90,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 1000;
   background-color: #fff; 
 
 
@@ -1602,11 +1603,11 @@ body {
     padding: vw(10) vw(10) vw(10) vw(10);
 
     @include mq() {
-      padding: vwt(10) vwt(0) vwt(10) vwt(0);
+      padding: vwt(10) vwt(0) vwt(12) vwt(0);
     }
 
     @include mq(lg) {
-      padding: px2Rem(10) px2Rem(0) px2Rem(10) px2Rem(0);
+      padding: px2Rem(10) px2Rem(0) px2Rem(12) px2Rem(0);
     }
   }
 
@@ -1614,11 +1615,11 @@ body {
     padding: vw(10);
 
     @include mq() {
-      padding: vwt(0);
+      padding: vwt(11);
     }
 
     @include mq(lg) {
-      padding: px2Rem(0);
+      padding: px2Rem(11);
     }
   }
 
@@ -1675,13 +1676,13 @@ body {
     margin: vw(5) vw(0) 0 vw(0);
 
     @include mq() {
-      width: vwt(160);
+      width: vwt(170);
       font-size: vwt(14);
       margin: vwt(5) 0 0 0;
     }
 
     @include mq(lg) {
-      width: px2Rem(160);
+      width: px2Rem(170);
       font-size: px2Rem(14);
       margin: px2Rem(5) 0 0 0;
     }
@@ -1693,7 +1694,7 @@ body {
   padding-bottom: vw(40);
 --swiper-pagination-top: vw(30);
     @include mq() {
-      width: 100%;
+      width: vw(930);
       max-width: vwt(1030);
       height: auto;
       margin: 0 auto;
@@ -1701,7 +1702,7 @@ body {
     }
 
     @include mq(lg) {
-      width: 100%;
+      width: px2Rem(930);
       max-width: px2Rem(1030);
       padding-bottom: px2Rem(75);
     }
