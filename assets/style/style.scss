@@ -739,16 +739,16 @@ body {
     transform: translateY(-50%);
 
     @include mq() {
-      width: vwt(10);
-      height: vwt(19.5);
-      margin-right: vwt(31.2);
+      width: vwt(20);
+      height: vwt(35);
+      margin-right: vwt(41.2);
      
     }
 
     @include mq(lg) {
-      width: px2Rem(10);
-      height: px2Rem(19.5);
-      margin-right: px2Rem(31.2);
+      width: px2Rem(20);
+      height: px2Rem(35);
+      margin-right: px2Rem(41.2);
       
   }
 }
