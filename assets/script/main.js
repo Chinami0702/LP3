@@ -20,7 +20,7 @@ new Swiper(".voice__swiper", {
     768: {
       allowTouchMove: false,
       slidesPerView: 3,
-      spaceBetween: 30,
+      spaceBetween: 10,
       pagination: false,
     },
   },
