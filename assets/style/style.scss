@@ -1501,7 +1501,7 @@ margin: px2Rem(10) 0 px2Rem(35) 0;
     font-size: 1.125rem;
     color: #fff;
     background-color: #fa7da3;
-    padding: vw(10);
+    padding: vw(10) vw(20);
     text-align: center;
     border-radius: 10px 10px 0 0;
     margin: 0;
@@ -1522,10 +1522,10 @@ margin: px2Rem(10) 0 px2Rem(35) 0;
     background: #fff;
     border: 1px solid #fa7da3;
     border-radius: 0 0 10px 10px;
-    padding: vw(10) vw(20);
     display: flex;
     align-items: center;
     gap: vw(10);
+    padding: vw(20);
 
     @include mq() {
       padding: vwt(10) vwt(20);
@@ -1538,6 +1538,9 @@ margin: px2Rem(10) 0 px2Rem(35) 0;
       border-radius: 0 0 px2Rem(10) px2Rem(10);
       gap: px2Rem(10);
     }
+  }
+  &__wrap-item{
+    padding: vw(30);
   }
 
   &__box {
@@ -1636,7 +1639,11 @@ margin: px2Rem(10) 0 px2Rem(35) 0;
 }
 
 .swiper-pagination {
+  display:block ;
   @include mq() {
+    display: none;
+  }
+   @include mq(lg) {
     display: none;
   }
 }
