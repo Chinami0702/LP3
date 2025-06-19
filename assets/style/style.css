@@ -6,6 +6,11 @@ body {
 
 .header {
   padding: 2.6vw 2.8vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -179,6 +184,17 @@ body {
 .intro {
   background-color: #fa7da3;
   padding: 0vw;
+  margin-top: 15.3846153846vw;
+}
+@media screen and (min-width: 768px) {
+  .intro {
+    margin-top: 9.3203883495vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .intro {
+    margin-top: 6rem;
+  }
 }
 .intro__container {
   background-image: url(/assets/image/intro_sp.png);

@@ -70,7 +70,7 @@ body {
   color: #fff;
   font-size: vw(12);
   text-decoration: none;
-
+  
 
   @include mq() {
     font-size: vwt(21);
@@ -86,6 +86,13 @@ body {
 
 .header {
   padding: 2.6vw 2.8vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff; 
+
+
 
   @include mq() {
     padding: vwt(20) vwt(2) vwt(20) vwt(2);
@@ -210,6 +217,13 @@ body {
 .intro {
   background-color: #fa7da3;
   padding: vw(0);
+    margin-top: vw(60);
+    @include mq(){
+   margin-top: vwt(96);
+    }
+    @include mq(lg){
+   margin-top: px2Rem(96);
+    }
 
   &__container {
     background-image: url(/assets/image/intro_sp.png);
