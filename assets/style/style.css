@@ -1413,7 +1413,7 @@ body {
 @media screen and (min-width: 1030px) {
   .course__title {
     font-size: 1.75rem;
-    paddin: 0.3125rem 0 0.3125rem 0;
+    padding: 0.3125rem 0 0.3125rem 0;
     border-top-left-radius: 0.625rem;
     border-top-right-radius: 0.625rem;
   }
