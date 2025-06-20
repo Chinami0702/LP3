@@ -793,8 +793,8 @@ body {
     font-size: vw(17);
     font-weight: 600;
     text-align: center;
-    border-top: 1px solid #50bfff;
-    border-bottom: 1px solid #50bfff;
+    border-top: 2px solid #50bfff;
+    border-bottom: 2px solid #50bfff;
     padding: vw(6.63) 0;
     letter-spacing: vw(1.56);
 
@@ -845,7 +845,7 @@ body {
 
   &__subtitle {
     font-size: vw(14);
-    font-weight: 600;
+    font-weight: 400;
     margin: 0;
 
     @include mq() {
@@ -861,7 +861,7 @@ body {
   &__subtxt {
     font-size: vw(14);
     margin: 0;
-    font-weight: 600;
+    font-weight: 400;
 
     @include mq() {
       font-size: vwt(22.8);
@@ -1079,13 +1079,13 @@ body {
     font-size: vw(14);
     color: #333;
     margin: vw(0) vw(0) vw(15.6) vw(0);
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: vw(-0.0039);
 
     @include mq() {
       font-size: vwt(21);
       margin: vwt(0) vwt(0) vwt(20) vwt(0);
-      font-weight: 600;
+      font-weight: 500;
       letter-spacing: vwt(-0.0039);
     }
 
@@ -1302,14 +1302,14 @@ body {
     border-bottom-right-radius: vw(10);
     border: 1px solid #fa7da3;
     line-height: 1.2;
-    font-weight: 600;
+    font-weight: 500;
 
     @include mq() {
       font-size: vwt(21);
       padding: vwt(30) vwt(30) vwt(30) vwt(40);
       border-bottom-left-radius: vwt(10);
       border-bottom-right-radius: vwt(10);
-      font-weight: 600;
+      font-weight: 500;
     }
 
     @include mq(lg) {
@@ -1437,7 +1437,7 @@ body {
   }
 
   &__wrapper-item {
-    border: 1px solid #fa7da3;
+    border: 2px solid #fa7da3;
     border-radius: vw(10);
 
 
@@ -1498,7 +1498,8 @@ body {
   &__txt {
     font-size: vw(14);
     margin: 0 0 vw(10) 0;
-    font-weight: 600;
+    font-weight: 500;
+    color: #333;
 
     @include mq() {
       font-size: vwt(18);
@@ -1694,16 +1695,14 @@ body {
   padding-bottom: vw(40);
 --swiper-pagination-top: vw(30);
     @include mq() {
-      width: vw(930);
-      max-width: vwt(1030);
+     width: vwt(960);
       height: auto;
       margin: 0 auto;
       padding-bottom: vwt(75);
     }
 
     @include mq(lg) {
-      width: px2Rem(930);
-      max-width: px2Rem(1030);
+      width: px2Rem(960);
       padding-bottom: px2Rem(75);
     }
   }
@@ -1759,6 +1758,12 @@ padding: px2Rem(53) px2Rem(10) px2Rem(70) px2Rem(10);
 .footer {
   background-color: #fa7da3;
   height: vw(64);
+  @include mq(){
+height: vwt(128);
+  }
+  @include mq(lg){
+height:px2Rem(128);
+  }
 
   &__logo {
     display: block;
