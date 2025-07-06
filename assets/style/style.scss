@@ -51,14 +51,14 @@ $breakpoints: (
   @return calc($px * 100vw / $pc-full-width);
 }
 
-//body
+/*body*/
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
 
-//header
+/*header*/
 @mixin flex-center($width, $height, $bg-color) {
   display: flex;
   justify-content: center;
@@ -214,7 +214,7 @@ body {
   }
 }
 
-//intro
+/*intro*/
 .intro {
   background-color: #fa7da3;
   padding: vw(0);
@@ -475,7 +475,7 @@ body {
 
 
 
-//note
+/*note*/
 .note {
   background-color: #fffedd;
   padding: vw(20.67) vw(19) vw(13.65) vw(21);
@@ -654,7 +654,7 @@ body {
   }
 }
 
-//btn
+/*btn*/
 .btn {
   padding: vw(14.82) vw(20) vw(30) vw(20);
 
@@ -921,7 +921,7 @@ body {
   }
 }
 
-//point
+/*point*/
 .point {
   padding: vw(31.2) vw(0) vw(31.2) vw(0);
   background-color: #fdf0f5;
@@ -1046,7 +1046,7 @@ body {
   }
 
   &__bar {
-    font-weight: 300; // 少し細めに
+    font-weight: 300; 
   }
 
   &__note {
@@ -1345,7 +1345,7 @@ body {
   }
 }
 
-//corse
+/*corse*/
 .course {
   padding: vw(11.7) vw(20) vw(15.6) vw(20);
 
@@ -1754,7 +1754,7 @@ padding: px2Rem(53) px2Rem(10) px2Rem(70) px2Rem(10);
   }
 }
 
-//fotoer
+/*fotoer*/
 .footer {
   background-color: #fa7da3;
   height: vw(64);
