@@ -85,13 +85,15 @@ body {
 }
 
 .header {
-    padding: 2.6vw 2.8vw;
+    height: vw(57);
+    padding:0;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
     background-color: #fff;
+    
 
 
 
@@ -104,7 +106,7 @@ body {
     }
 
     &__btn {
-        margin-left: vw(10);
+      
 
         @include mq() {
             margin-left: vwt(5);
@@ -118,13 +120,17 @@ body {
             height: px2Rem(16);
         }
     }
+    &__btn--left{
+        margin-left: vw(5);
+    }
 
     &__container {
         max-width: vw(369);
-        margin: 0 auto;
+        margin: 0 vw(10) 0 auto;
         display: flex;
         gap: vw(3.9);
         align-items: center;
+        justify-content: space-between;
 
         @include mq() {
             width: vwt(1030);
@@ -151,9 +157,11 @@ body {
     }
 
     &__links {
+    padding: 0;
         display: flex;
-        gap: vw(11.7);
+        gap: vw(9);
         list-style: none;
+        margin: vw(15) vw(0) vw(15) vw(0);
 
         @include mq() {
             gap: vwt(11)
@@ -165,6 +173,7 @@ body {
     }
 
     &__link-item {
+        letter-spacing: vw(.4);
         @include flex-center(107, 31, #fa7da3);
 
         @include mq() {
@@ -181,11 +190,13 @@ body {
     }
 
     &__link-items {
+        padding-left:vw(4);
+        letter-spacing: vw(.4);
         @include flex-center(173.77, 31, #49c43d);
 
         @include mq() {
             width: vwt(300);
-            height: vwt(50);
+            height: vwt(55);
             font-size: vwt(20);
             border-radius: vwt(25.18);
         }
@@ -261,7 +272,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: vw(19.5) vw(0) vw(10) vw(19.5);
+        margin: vw(21) vw(0) vw(10) vw(18);
         width: vw(170);
 
         @include mq() {
@@ -301,7 +312,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: vw(11.31) vw(23) vw(21) vw(27.3);
+        padding: vw(13) vw(23) vw(21) vw(27.3);
         margin-left: auto;
         width: vw(188);
         box-shadow: 3px 3px rgba(0, 0, 0, 0.08);
@@ -329,7 +340,7 @@ body {
         background-color: #fff;
         color: #fa7da3;
         width: vw(47);
-        padding: vw(3) 0;
+        padding: vw(2) 0 vw(2) 0;
         font-size: vw(13);
         font-weight: 700;
         text-align: center;

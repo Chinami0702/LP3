@@ -7,7 +7,8 @@ body {
 
 /*header*/
 .header {
-  padding: 2.6vw 2.8vw;
+  height: 14.6153846154vw;
+  padding: 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -25,9 +26,6 @@ body {
     padding: 1.25rem 0.125rem 1.25rem 0.125rem;
   }
 }
-.header__btn {
-  margin-left: 2.5641025641vw;
-}
 @media screen and (min-width: 768px) {
   .header__btn {
     margin-left: 0.4854368932vw;
@@ -42,12 +40,16 @@ body {
     height: 1rem;
   }
 }
+.header__btn--left {
+  margin-left: 1.2820512821vw;
+}
 .header__container {
   max-width: 94.6153846154vw;
-  margin: 0 auto;
+  margin: 0 2.5641025641vw 0 auto;
   display: flex;
   gap: 1vw;
   align-items: center;
+  justify-content: space-between;
 }
 @media screen and (min-width: 768px) {
   .header__container {
@@ -76,9 +78,11 @@ body {
   }
 }
 .header__links {
+  padding: 0;
   display: flex;
-  gap: 3vw;
+  gap: 2.3076923077vw;
   list-style: none;
+  margin: 3.8461538462vw 0vw 3.8461538462vw 0vw;
 }
 @media screen and (min-width: 768px) {
   .header__links {
@@ -91,6 +95,7 @@ body {
   }
 }
 .header__link-item {
+  letter-spacing: 0.1025641026vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -129,6 +134,8 @@ body {
   }
 }
 .header__link-items {
+  padding-left: 1.0256410256vw;
+  letter-spacing: 0.1025641026vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -155,7 +162,7 @@ body {
 @media screen and (min-width: 768px) {
   .header__link-items {
     width: 29.1262135922vw;
-    height: 4.854368932vw;
+    height: 5.3398058252vw;
     font-size: 1.9417475728vw;
     border-radius: 2.4446601942vw;
   }
@@ -232,7 +239,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 5vw 0vw 2.5641025641vw 5vw;
+  margin: 5.3846153846vw 0vw 2.5641025641vw 4.6153846154vw;
   width: 43.5897435897vw;
 }
 @media screen and (min-width: 768px) {
@@ -274,7 +281,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2.9vw 5.8974358974vw 5.3846153846vw 7vw;
+  padding: 3.3333333333vw 5.8974358974vw 5.3846153846vw 7vw;
   margin-left: auto;
   width: 48.2051282051vw;
   box-shadow: 3px 3px rgba(0, 0, 0, 0.08);
@@ -301,7 +308,7 @@ body {
   background-color: #fff;
   color: #fa7da3;
   width: 12.0512820513vw;
-  padding: 0.7692307692vw 0;
+  padding: 0.5128205128vw 0 0.5128205128vw 0;
   font-size: 3.3333333333vw;
   font-weight: 700;
   text-align: center;
