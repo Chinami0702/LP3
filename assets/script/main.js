@@ -1,3 +1,4 @@
+/*お客様の声*/
 new Swiper(".voice__swiper", {
     loop: false,
     allowTouchMove: true,
@@ -22,6 +23,7 @@ new Swiper(".voice__swiper", {
             slidesPerView: 3,
             spaceBetween: 10,
             pagination: false,
+            autoplay:false,
         },
     },
 });
