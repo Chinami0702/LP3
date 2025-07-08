@@ -255,6 +255,8 @@ body {
 }
 .intro__subspan {
   font-size: 9.2307692308vw;
+  margin-bottom: 1.0256410256vw;
+  vertical-align: baseline;
 }
 @media screen and (min-width: 768px) {
   .intro__subspan {
@@ -281,7 +283,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 3.3333333333vw 5.8974358974vw 5.3846153846vw 7vw;
+  padding: 3.3333333333vw 5.641025641vw 5.3846153846vw 7vw;
   margin-left: auto;
   width: 48.2051282051vw;
   box-shadow: 3px 3px rgba(0, 0, 0, 0.08);
@@ -356,6 +358,7 @@ body {
   }
 }
 .intro__price-description {
+  vertical-align: baseline;
   font-size: 19.4871794872vw;
   font-weight: 700;
   color: #fffd7a;
@@ -375,7 +378,7 @@ body {
 .intro__description {
   font-size: 3.5897435897vw;
   font-family: Outfit;
-  margin: 1.5vw 0 5.1282051282vw 0;
+  margin: 1.0256410256vw 0 5.1282051282vw 0;
   color: #fff;
   text-align: end;
   width: 42.5vw;
@@ -395,7 +398,7 @@ body {
   }
 }
 .intro__list {
-  padding: 0vw 3.8461538462vw 3.5vw 4.6153846154vw;
+  padding: 0vw 3.8461538462vw 3.8461538462vw 4.6153846154vw;
 }
 @media screen and (min-width: 768px) {
   .intro__list {
@@ -563,7 +566,7 @@ body {
 }
 .note__title {
   width: auto;
-  margin-top: 2.5641025641vw;
+  margin-top: 2.0512820513vw;
 }
 @media screen and (min-width: 768px) {
   .note__title {
@@ -600,7 +603,7 @@ body {
   color: #fa7da3;
   background-color: #fff;
   margin: 0;
-  text-align: center;
+  padding: 0 0 0.5128205128vw 18.9743589744vw;
   border: 1px solid #fa7da3;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -672,7 +675,7 @@ body {
   font-size: 5.3846153846vw;
   color: #fa7da3;
   text-align: center;
-  margin: 0vw 0 2vw 1.7vw;
+  margin: 0vw 0 1.7948717949vw 1.7vw;
   letter-spacing: 0.5vw;
 }
 @media screen and (min-width: 768px) {
@@ -729,6 +732,7 @@ body {
   margin: 0 auto;
   position: relative;
   letter-spacing: 0.4vw;
+  line-height: 1.33;
 }
 @media screen and (min-width: 768px) {
   .btn__click {

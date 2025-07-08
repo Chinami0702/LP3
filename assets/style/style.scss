@@ -287,6 +287,8 @@ body {
 
     &__subspan {
         font-size: vw(36);
+        margin-bottom: vw(4);
+         vertical-align: baseline;
 
         @include mq() {
             font-size: vwt(80);
@@ -312,7 +314,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: vw(13) vw(23) vw(21) vw(27.3);
+        padding: vw(13) vw(22) vw(21) vw(27.3);
         margin-left: auto;
         width: vw(188);
         box-shadow: 3px 3px rgba(0, 0, 0, 0.08);
@@ -386,6 +388,7 @@ body {
     }
 
     &__price-description {
+         vertical-align: baseline;
         font-size: vw(76);
         font-weight: 700;
         color: #fffd7a;
@@ -405,7 +408,7 @@ body {
     &__description {
         font-size: vw(14);
         font-family: Outfit;
-        margin: vw(5.85) 0 vw(20) 0;
+        margin: vw(4) 0 vw(20) 0;
         color: #fff;
         text-align: end;
         width: vw(165.75);
@@ -424,7 +427,7 @@ body {
     }
 
     &__list {
-        padding: vw(0) vw(15) vw(13.65) vw(18);
+        padding: vw(0) vw(15) vw(15) vw(18);
 
         @include mq() {
             padding: vwt(10) vwt(0) vwt(40) vwt(0);
@@ -587,7 +590,7 @@ body {
 
     &__title {
         width: auto;
-        margin-top: vw(10);
+        margin-top: vw(8);
 
         @include mq() {
             width: vwt(550);
@@ -622,7 +625,7 @@ body {
         color: #fa7da3;
         background-color: #fff;
         margin: 0;
-        text-align: center;
+       padding: 0 0 vw(2) vw(74);
         border: 1px solid #fa7da3;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
@@ -690,7 +693,7 @@ body {
         font-size: vw(21);
         color: #fa7da3;
         text-align: center;
-        margin: vw(0) 0 vw(7.8) vw(6.63);
+        margin: vw(0) 0 vw(7) vw(6.63);
         letter-spacing: vw(1.95);
 
         @include mq() {
@@ -747,6 +750,7 @@ body {
         margin: 0 auto;
         position: relative;
         letter-spacing: vw(1.56);
+        line-height:1.33 ;
 
         @include mq() {
             max-width: vwt(340);
