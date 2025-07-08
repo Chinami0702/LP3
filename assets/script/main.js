@@ -14,7 +14,7 @@ new Swiper(".voice__swiper", {
     },
 
     autoplay: {
-        delay: 600000,
+        delay: 6000,
         disableOnInteraction: false,
     },
     breakpoints: {

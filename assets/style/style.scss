@@ -98,11 +98,13 @@ body {
 
 
     @include mq() {
-        padding: vwt(20) vwt(2) vwt(20) vwt(2);
+        height: vwt(95);
+        padding: vwt(20) vwt(2) vwt(17) vwt(2);
     }
 
     @include mq(lg) {
-        padding: px2Rem(20) px2Rem(2) px2Rem(20) px2Rem(2);
+        height: px2Rem(95);
+        padding: px2Rem(20) px2Rem(2) px2Rem(17) px2Rem(2);
     }
 
     &__btn {
@@ -135,13 +137,15 @@ body {
 
         @include mq() {
             width: vwt(1030);
-            gap: vwt(3.9);
+            gap: vwt(1);
+            margin: 0 auto;
             justify-content: space-between
         }
 
         @include mq(lg) {
             width: px2Rem(1030);
-            gap: px2Rem(3.9);
+            gap: px2Rem(1);
+            margin: 0 auto;
         }
     }
 
@@ -165,11 +169,13 @@ body {
         margin: vw(15) vw(0) vw(15) vw(0);
 
         @include mq() {
-            gap: vwt(11)
+            gap: vwt(16);
+            margin: 0;
         }
 
         @include mq(lg) {
-            gap: px2Rem(11)
+            gap: px2Rem(16);
+            margin: 0;
         }
     }
 
@@ -234,11 +240,11 @@ body {
     margin-top: vw(60);
 
     @include mq() {
-        margin-top: vwt(96);
+        margin-top: vwt(92);
     }
 
     @include mq(lg) {
-        margin-top: px2Rem(96);
+        margin-top: px2Rem(92);
     }
 
     &__container {
@@ -323,20 +329,29 @@ body {
         @include mq() {
             width: vwt(430);
             height: vwt(222);
-            padding: vwt(0) vwt(22) vwt(32) vwt(25);
+            padding: vwt(0) vwt(22) vwt(32) vwt(27);
             justify-content: center;
+            gap: vwt(20);
         }
 
         @include mq(lg) {
             width: px2Rem(430);
             height: px2Rem(222);
-            padding: px2Rem(0) px2Rem(22) px2Rem(32) px2Rem(25);
-
+            padding: px2Rem(0) px2Rem(22) px2Rem(32) px2Rem(27);
+            gap: px2Rem(20);
         }
     }
 
     &__price-box {
         margin-top: vw(10);
+
+        @include mq() {
+            margin-top: vwt(39);
+        }
+
+        @include mq(lg) {
+            margin-top: px2Rem(39);
+        }
     }
 
     &__price-item {
@@ -350,12 +365,14 @@ body {
 
         @include mq() {
             width: vwt(105);
+            height: vwt(51.6);
             font-size: vwt(29);
             padding: vwt(2) 0;
         }
 
         @include mq(lg) {
             width: px2Rem(105);
+            height: px2Rem(51.6);
             font-size: px2Rem(29);
             padding: px2Rem(2) 0;
         }
@@ -371,9 +388,11 @@ body {
         @include mq() {
             width: vwt(111);
             font-size: vwt(54);
+            margin: vwt(10) 0 0 0;
         }
 
         @include mq(lg) {
+            margin: px2Rem(10) 0 0 0;
             width: px2Rem(111);
             font-size: px2Rem(54);
         }
@@ -417,13 +436,13 @@ body {
 
         @include mq() {
             font-size: vwt(26);
-            width: vwt(390);
+            width: vwt(385);
             margin: 0 0 vwt(20) 0;
         }
 
         @include mq(lg) {
             font-size: px2Rem(26);
-            width: px2Rem(390);
+            width: px2Rem(385);
             margin: 0 0 px2Rem(20) 0;
         }
     }
@@ -432,11 +451,11 @@ body {
         padding: vw(0) vw(15) vw(15) vw(18);
 
         @include mq() {
-            padding: vwt(10) vwt(0) vwt(40) vwt(0);
+            padding: vwt(14) vwt(0) vwt(35) vwt(0);
         }
 
         @include mq(lg) {
-            padding: px2Rem(10) px2Rem(0) px2Rem(40) px2Rem(0);
+            padding: px2Rem(14) px2Rem(0) px2Rem(35) px2Rem(0);
         }
     }
 
@@ -465,17 +484,17 @@ body {
 
         @include mq() {
             width: vwt(425);
-            height: vwt(67);
+            height: vwt(68);
             font-size: vwt(28);
-            margin: vwt(0) vwt(0) vwt(20) vwt(0);
+            margin: vwt(0) vwt(0) vwt(21) vwt(0);
 
         }
 
         @include mq(lg) {
             width: px2Rem(425);
-            height: px2Rem(67);
+            height: px2Rem(68);
             font-size: px2Rem(28);
-            margin: px2Rem(0) px2Rem(0) px2Rem(20) px2Rem(0);
+            margin: px2Rem(0) px2Rem(0) px2Rem(21) px2Rem(0);
         }
     }
 
@@ -500,11 +519,11 @@ body {
     padding: vw(20.67) vw(19) vw(13.65) vw(21);
 
     @include mq() {
-        padding: vwt(36) vwt(30) vwt(25) vwt(30);
+        padding: vwt(40) vwt(30) vwt(25) vwt(30);
     }
 
     @include mq(lg) {
-        padding: px2Rem(36) px2Rem(30) px2Rem(25) px2Rem(30);
+        padding: px2Rem(40) px2Rem(30) px2Rem(25) px2Rem(30);
     }
 
     &__container {
@@ -553,100 +572,102 @@ body {
 
         @include mq() {
             font-size: vwt(34);
-            margin-bottom: vwt(20);
+            margin-bottom: vwt(18);
             gap: vwt(23);
         }
 
         @include mq(lg) {
             font-size: px2Rem(34);
-            margin-bottom: px2Rem(20);
+            margin-bottom: px2Rem(18);
             gap: px2Rem(23);
         }
     }
 
 
 
-&__title {
-    width: auto;
-    margin-top: vw(8);
+    &__title {
+        width: auto;
+        margin-top: vw(8);
 
-    @include mq() {
-        width: vwt(550);
-        margin: 0 auto;
+        @include mq() {
+            width: vwt(550);
+            margin: 0 auto;
+        }
+
+        @include mq(lg) {
+            width: px2Rem(550);
+        }
     }
 
-    @include mq(lg) {
-        width: px2Rem(550);
-    }
-}
+    &__txt {
+        font-size: vw(21);
+        color: #fff;
+        background-color: #fa7da3;
+        text-align: center;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        margin: 0;
 
-&__txt {
-    font-size: vw(21);
-    color: #fff;
-    background-color: #fa7da3;
-    text-align: center;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    margin: 0;
+        @include mq() {
+            font-size: vwt(32);
+        }
 
-    @include mq() {
-        font-size: vwt(32);
-    }
-
-    @include mq(lg) {
-        font-size: px2Rem(32);
-    }
-}
-
-&__subtitle {
-    font-size: vw(27);
-    color: #fa7da3;
-    background-color: #fff;
-    margin: 0;
-    padding: 0 0 vw(2) vw(74);
-    border: 1px solid #fa7da3;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    line-height: 1.4;
-
-    @include mq() {
-        font-size: vwt(43);
+        @include mq(lg) {
+            font-size: px2Rem(32);
+        }
     }
 
-    @include mq(lg) {
-        font-size: px2Rem(43);
-    }
-}
+    &__subtitle {
+        font-size: vw(27);
+        color: #fa7da3;
+        background-color: #fff;
+        margin: 0;
+        padding: 0 0 vw(2) vw(74);
+        border: 1px solid #fa7da3;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        line-height: 1.4;
 
-&__bonus-label {
-    font-size: vw(42);
-    font-weight: 600;
+        @include mq() {
+            font-size: vwt(43);
+            padding: 0 0 vwt(2) vwt(116);
+        }
 
-    @include mq() {
-        font-size: vwt(67);
-    }
-
-    @include mq(lg) {
-        font-size: px2Rem(67);
-    }
-}
-
-&__detail {
-    font-size: vw(10);
-    text-align: center;
-    font-weight: 600;
-    margin-top: vw(8);
-
-    @include mq() {
-        font-size: vwt(14);
-        margin-top: vwt(20);
+        @include mq(lg) {
+            font-size: px2Rem(43);
+            padding: 0 0 px2Rem(2) px2Rem(116);
+        }
     }
 
-    @include mq(lg) {
-        font-size: px2Rem(14);
-        margin-top: px2Rem(20);
+    &__bonus-label {
+        font-size: vw(42);
+        font-weight: 600;
+
+        @include mq() {
+            font-size: vwt(67);
+        }
+
+        @include mq(lg) {
+            font-size: px2Rem(67);
+        }
     }
-}
+
+    &__detail {
+        font-size: vw(10);
+        text-align: center;
+        font-weight: 600;
+        margin-top: vw(8);
+
+        @include mq() {
+            font-size: vwt(14);
+            margin-top: vwt(20);
+        }
+
+        @include mq(lg) {
+            font-size: px2Rem(14);
+            margin-top: px2Rem(20);
+        }
+    }
 }
 
 /*btn*/
@@ -1102,19 +1123,20 @@ body {
 
         }
     }
-    &__note-special{
-         padding: vw(13.65) vw(7) vw(14) vw(7);
-          margin-bottom: vw(32);
+
+    &__note-special {
+        padding: vw(13.65) vw(7) vw(14) vw(7);
+        margin-bottom: vw(32);
     }
 
     &__description {
-         background-color: #fff;
+        background-color: #fff;
         letter-spacing: vw(-.533);
         font-size: vw(14);
         color: #333;
         margin: vw(0) vw(0) vw(13) vw(14.5);
         font-weight: 500;
-     
+
 
         @include mq() {
             font-size: vwt(21);
@@ -1129,8 +1151,9 @@ body {
             letter-spacing: px2Rem(-0.0039);
         }
     }
-    &__description-special{
-          letter-spacing: 0;
+
+    &__description-special {
+        letter-spacing: 0;
     }
 
     &__flex {
@@ -1199,7 +1222,7 @@ body {
         }
     }
 
-   
+
 
     &__subtitle {
         font-size: vw(23.4);
@@ -1405,10 +1428,11 @@ body {
         margin: px2Rem(10) 0 px2Rem(35) 0;
     }
 }
-.section__main-special{
-   margin: vw(5) 0 vw(20) vw(-10);
-   letter-spacing: vw(1);
-   font-family: Noto Sans JP;
+
+.section__main-special {
+    margin: vw(5) 0 vw(20) vw(-10);
+    letter-spacing: vw(1);
+    font-family: Noto Sans JP;
 }
 
 /*corse*/
