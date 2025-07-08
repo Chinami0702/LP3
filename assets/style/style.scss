@@ -1083,7 +1083,7 @@ body {
         border: 1px solid #fa7da3;
         border-bottom-left-radius: vw(10);
         border-bottom-right-radius: vw(10);
-        margin-bottom: vw(28.2);
+        margin-bottom: vw(29);
 
 
         @include mq() {
@@ -1101,6 +1101,10 @@ body {
             border-bottom-right-radius: px2Rem(10);
 
         }
+    }
+    &__note-special{
+         padding: vw(13.65) vw(7) vw(14) vw(7);
+          margin-bottom: vw(32);
     }
 
     &__description {
@@ -1237,7 +1241,7 @@ body {
         flex-wrap: wrap;
         margin: 0;
         justify-content: space-between;
-        row-gap: vw(18);
+        row-gap: vw(16);
     }
 
     &__list-item {
@@ -1402,8 +1406,9 @@ body {
     }
 }
 .section__main-special{
-   margin: vw(5) 0 vw(22) vw(-10);
-   letter-spacing: vw(-.01);
+   margin: vw(5) 0 vw(20) vw(-10);
+   letter-spacing: vw(1);
+   font-family: Noto Sans JP;
 }
 
 /*corse*/
@@ -1437,6 +1442,7 @@ body {
         font-size: vw(18);
         text-align: center;
         font-weight: 500;
+        font-family: Noto Sans JP;
 
         @include mq() {
             font-size: vwt(24);
@@ -1453,7 +1459,7 @@ body {
         text-align: center;
         background-color: #fdf0f5;
         font-weight: 400;
-        padding: vw(10) vw(0);
+        padding: vw(10) vw(0) vw(8) 0;
         margin: 0;
         border-top-left-radius: vw(10);
         border-top-right-radius: vw(10);
@@ -1487,7 +1493,7 @@ body {
     }
 
     &__wrapper-item-special {
-        margin-bottom: vw(31.2);
+        margin-bottom: vw(30);
 
         @include mq() {
             margin-bottom: vwt(31.2);
@@ -1517,7 +1523,7 @@ body {
     }
 
     &__box {
-        padding: vw(13.65) vw(20) vw(23.4) vw(20);
+        padding: vw(13.65) vw(20) vw(22) vw(20);
 
 
         @include mq() {
@@ -1559,7 +1565,7 @@ body {
 
     &__txt {
         font-size: vw(14);
-        margin: 0 0 vw(10) 0;
+        margin: 0 0 vw(12) 0;
         font-weight: 500;
         color: #333;
 
@@ -1595,7 +1601,7 @@ body {
 
     &__container {
         margin: 0 auto;
-        padding: vw(23) vw(0) vw(10) vw(0);
+        padding: vw(23) vw(0) vw(15) vw(0);
 
         @include mq() {
             max-width: vwt(1200);
@@ -1611,7 +1617,7 @@ body {
         font-size: 1.125rem;
         color: #fff;
         background-color: #fa7da3;
-        padding: vw(10) vw(20);
+        padding: vw(8) vw(15);
         text-align: center;
         border-radius: 10px 10px 0 0;
         margin: 0;
@@ -1663,7 +1669,7 @@ body {
     }
 
     &__wrap-item {
-        padding: vw(10) vw(10) vw(10) vw(10);
+        padding: vw(16) vw(5) vw(10) 0;
 
         @include mq() {
             padding: vwt(10) vwt(0) vwt(12) vwt(0);
@@ -1675,7 +1681,7 @@ body {
     }
 
     &__wrap-spacial {
-        padding: vw(10);
+        padding: vw(13);
 
         @include mq() {
             padding: vwt(11);
@@ -1755,7 +1761,7 @@ body {
         position: relative;
         overflow: hidden;
         padding-bottom: vw(40);
-        --swiper-pagination-top: vw(30);
+        --swiper-pagination-top: vw(40);
 
         @include mq() {
             width: vwt(960);
@@ -1782,7 +1788,8 @@ body {
 
 .swiper-pagination {
     display: block;
-    --swiper-pagination-bullet-horizontal-gap: 7px;
+    --swiper-pagination-bullet-horizontal-gap: 8px;
+    --swiper-pagination-bottom: 1px;
 
     @include mq() {
         display: none;
@@ -1809,7 +1816,7 @@ body {
 }
 
 .btn--three {
-    padding: vw(30) vw(10) vw(45) vw(10);
+    padding: vw(27) vw(10) vw(42) vw(10);
 
     @include mq() {
         padding: vwt(53) vwt(10) vwt(70) vwt(10);
@@ -1837,7 +1844,7 @@ body {
         display: block;
         width: vw(75);
         margin: 0 auto;
-        padding-top: vw(10);
+        padding-top: vw(14);
 
         @include mq() {
             width: vwt(150);

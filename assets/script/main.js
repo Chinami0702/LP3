@@ -6,15 +6,15 @@ new Swiper(".voice__swiper", {
     centeredSlides: true,
     initialSlide: 1,
 
-    slidesPerView: 1.3,
-    spaceBetween: 20,
+    slidesPerView: 1.225,
+    spaceBetween: 10,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
     },
 
     autoplay: {
-        delay: 6000,
+        delay: 600000,
         disableOnInteraction: false,
     },
     breakpoints: {

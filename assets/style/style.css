@@ -1057,7 +1057,7 @@ body {
   border: 1px solid #fa7da3;
   border-bottom-left-radius: 2.5641025641vw;
   border-bottom-right-radius: 2.5641025641vw;
-  margin-bottom: 7.2307692308vw;
+  margin-bottom: 7.4358974359vw;
 }
 @media screen and (min-width: 768px) {
   .point__note {
@@ -1074,6 +1074,10 @@ body {
     border-bottom-left-radius: 0.625rem;
     border-bottom-right-radius: 0.625rem;
   }
+}
+.point__note-special {
+  padding: 3.5vw 1.7948717949vw 3.5897435897vw 1.7948717949vw;
+  margin-bottom: 8.2051282051vw;
 }
 .point__description {
   background-color: #fff;
@@ -1211,7 +1215,7 @@ body {
   flex-wrap: wrap;
   margin: 0;
   justify-content: space-between;
-  row-gap: 4.6153846154vw;
+  row-gap: 4.1025641026vw;
 }
 .point__list-item {
   width: 25.641025641vw;
@@ -1387,8 +1391,9 @@ body {
 }
 
 .section__main-special {
-  margin: 1.2820512821vw 0 5.641025641vw -2.5641025641vw;
-  letter-spacing: -0.0025641026vw;
+  margin: 1.2820512821vw 0 5.1282051282vw -2.5641025641vw;
+  letter-spacing: 0.2564102564vw;
+  font-family: Noto Sans JP;
 }
 
 /*corse*/
@@ -1425,6 +1430,7 @@ body {
   font-size: 4.6153846154vw;
   text-align: center;
   font-weight: 500;
+  font-family: Noto Sans JP;
 }
 @media screen and (min-width: 768px) {
   .course__heading02 {
@@ -1442,7 +1448,7 @@ body {
   text-align: center;
   background-color: #fdf0f5;
   font-weight: 400;
-  padding: 2.5641025641vw 0vw;
+  padding: 2.5641025641vw 0vw 2.0512820513vw 0;
   margin: 0;
   border-top-left-radius: 2.5641025641vw;
   border-top-right-radius: 2.5641025641vw;
@@ -1477,7 +1483,7 @@ body {
   }
 }
 .course__wrapper-item-special {
-  margin-bottom: 8vw;
+  margin-bottom: 7.6923076923vw;
 }
 @media screen and (min-width: 768px) {
   .course__wrapper-item-special {
@@ -1508,7 +1514,7 @@ body {
   }
 }
 .course__box {
-  padding: 3.5vw 5.1282051282vw 6vw 5.1282051282vw;
+  padding: 3.5vw 5.1282051282vw 5.641025641vw 5.1282051282vw;
 }
 @media screen and (min-width: 768px) {
   .course__box {
@@ -1549,7 +1555,7 @@ body {
 }
 .course__txt {
   font-size: 3.5897435897vw;
-  margin: 0 0 2.5641025641vw 0;
+  margin: 0 0 3.0769230769vw 0;
   font-weight: 500;
   color: #333;
 }
@@ -1588,7 +1594,7 @@ body {
 }
 .voice__container {
   margin: 0 auto;
-  padding: 5.8974358974vw 0vw 2.5641025641vw 0vw;
+  padding: 5.8974358974vw 0vw 3.8461538462vw 0vw;
 }
 @media screen and (min-width: 768px) {
   .voice__container {
@@ -1605,7 +1611,7 @@ body {
   font-size: 1.125rem;
   color: #fff;
   background-color: #fa7da3;
-  padding: 2.5641025641vw 5.1282051282vw;
+  padding: 2.0512820513vw 3.8461538462vw;
   text-align: center;
   border-radius: 10px 10px 0 0;
   margin: 0;
@@ -1659,7 +1665,7 @@ body {
   }
 }
 .voice__wrap-item {
-  padding: 2.5641025641vw 2.5641025641vw 2.5641025641vw 2.5641025641vw;
+  padding: 4.1025641026vw 1.2820512821vw 2.5641025641vw 0;
 }
 @media screen and (min-width: 768px) {
   .voice__wrap-item {
@@ -1672,7 +1678,7 @@ body {
   }
 }
 .voice__wrap-spacial {
-  padding: 2.5641025641vw;
+  padding: 3.3333333333vw;
 }
 @media screen and (min-width: 768px) {
   .voice__wrap-spacial {
@@ -1757,7 +1763,7 @@ body {
   position: relative;
   overflow: hidden;
   padding-bottom: 10.2564102564vw;
-  --swiper-pagination-top: vw(30);
+  --swiper-pagination-top: vw(40);
 }
 @media screen and (min-width: 768px) {
   .voice__swiper {
@@ -1779,7 +1785,8 @@ body {
 }
 .swiper-pagination {
   display: block;
-  --swiper-pagination-bullet-horizontal-gap: 7px;
+  --swiper-pagination-bullet-horizontal-gap: 8px;
+  --swiper-pagination-bottom: 1px;
 }
 @media screen and (min-width: 768px) {
   .swiper-pagination {
@@ -1806,7 +1813,7 @@ body {
 }
 
 .btn--three {
-  padding: 7.6923076923vw 2.5641025641vw 11.5384615385vw 2.5641025641vw;
+  padding: 6.9230769231vw 2.5641025641vw 10.7692307692vw 2.5641025641vw;
 }
 @media screen and (min-width: 768px) {
   .btn--three {
@@ -1838,7 +1845,7 @@ body {
   display: block;
   width: 19.2307692308vw;
   margin: 0 auto;
-  padding-top: 2.5641025641vw;
+  padding-top: 3.5897435897vw;
 }
 @media screen and (min-width: 768px) {
   .footer__logo {
