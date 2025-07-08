@@ -408,7 +408,7 @@ body {
     &__description {
         font-size: vw(14);
         font-family: Outfit;
-        margin: vw(4) 0 vw(20) 0;
+        margin: vw(3.5) 0 vw(21) 0;
         color: #fff;
         text-align: end;
         width: vw(165.75);
@@ -519,6 +519,7 @@ body {
     }
 
     &__heading {
+        margin-top: vw(-1);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -847,6 +848,15 @@ body {
             margin: px2Rem(20) auto 0 auto;
         }
     }
+    &__label{
+       
+        font-size: vw(14);
+        font-weight: 500;
+    }
+    &__content{
+        font-size: vw(14);
+        font-weight: 500;
+    }
 
 
     &__detail {
@@ -908,6 +918,7 @@ body {
 
 .trial-list {
     padding: 0;
+    margin: vw(8) 0 0 vw(4);  
 
     &__item {
         list-style: none;

@@ -378,7 +378,7 @@ body {
 .intro__description {
   font-size: 3.5897435897vw;
   font-family: Outfit;
-  margin: 1.0256410256vw 0 5.1282051282vw 0;
+  margin: 0.8974358974vw 0 5.3846153846vw 0;
   color: #fff;
   text-align: end;
   width: 42.5vw;
@@ -494,6 +494,7 @@ body {
   }
 }
 .note__heading {
+  margin-top: -0.2564102564vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -831,6 +832,14 @@ body {
     margin: 1.25rem auto 0 auto;
   }
 }
+.btn__label {
+  font-size: 3.5897435897vw;
+  font-weight: 500;
+}
+.btn__content {
+  font-size: 3.5897435897vw;
+  font-weight: 500;
+}
 .btn__detail {
   display: flex;
   align-items: center;
@@ -893,6 +902,7 @@ body {
 
 .trial-list {
   padding: 0;
+  margin: 2.0512820513vw 0 0 1.0256410256vw;
 }
 .trial-list__item {
   list-style: none;
