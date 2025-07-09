@@ -125,6 +125,18 @@ body {
 
     &__btn--left {
         margin-left: vw(5);
+
+        @include mq() {
+            margin-left: vwt(5);
+            width: vwt(12);
+            height: vwt(16);
+        }
+
+        @include mq(lg) {
+            margin-left: px2Rem(5);
+            width: px2Rem(12);
+            height: px2Rem(16);
+        }
     }
 
     &__container {
@@ -271,6 +283,7 @@ body {
             background-size: px2Rem(486);
             padding: px2Rem(0) px2Rem(0) px2Rem(0) px2Rem(0);
             max-width: px2Rem(974);
+            margin: 0 auto;
 
         }
     }
@@ -675,11 +688,11 @@ body {
     padding: vw(14.82) vw(20) vw(26) vw(20);
 
     @include mq() {
-        padding: vwt(50) vwt(20) vwt(65) vwt(10);
+        padding: vwt(50) vwt(20) vwt(60) vwt(10);
     }
 
     @include mq(lg) {
-        padding: px2Rem(50) px2Rem(20) px2Rem(65) px2Rem(10);
+        padding: px2Rem(50) px2Rem(20) px2Rem(60) px2Rem(10);
     }
 
     &__container {
@@ -698,13 +711,13 @@ body {
         @include mq() {
             font-size: vwt(34);
             margin: 0 0 vwt(10) vwt(15);
-            letter-spacing: vwt(4.3);
+            letter-spacing: vwt(2);
         }
 
         @include mq(lg) {
             font-size: px2Rem(34);
             margin: 0 0 px2Rem(10) px2Rem(15);
-            letter-spacing: px2Rem(4.3);
+            letter-spacing: px2Rem(2);
         }
     }
 
@@ -754,13 +767,13 @@ body {
         @include mq() {
             max-width: vwt(340);
             font-size: vwt(34);
-            letter-spacing: vwt(1.56);
+            letter-spacing: vwt(3.5);
         }
 
         @include mq(lg) {
             max-width: px2Rem(340);
             font-size: px2Rem(34);
-            letter-spacing: px2Rem(1.56);
+            letter-spacing: px2Rem(3.5);
         }
     }
 
@@ -795,13 +808,13 @@ body {
         max-width: vw(575);
 
         @include mq() {
-            width: vwt(561);
+            width: vwt(565);
             max-width: vwt(875);
             padding: vwt(50) 0 0 0;
         }
 
         @include mq(lg) {
-            width: px2Rem(561);
+            width: px2Rem(565);
             max-width: px2Rem(875);
             padding: px2Rem(50) 0 0 0;
 
@@ -852,11 +865,29 @@ body {
         width: vw(77);
         font-size: vw(14);
         font-weight: 500;
+
+        @include mq() {
+            width: vwt(128);
+            font-size: vwt(22.86);
+        }
+
+        @include mq(lg) {
+            width: px2Rem(128);
+            font-size: px2Rem(22.86);
+        }
     }
 
     &__content {
         font-size: vw(14);
         font-weight: 500;
+
+        @include mq() {
+            font-size: vwt(22.8);
+        }
+
+        @include mq(lg) {
+            font-size: px2Rem(22.8);
+        }
     }
 
 
@@ -922,14 +953,38 @@ body {
     padding: 0;
     margin: vw(10) 0 0 vw(4);
 
+    @include mq() {
+        margin: vwt(13) 0 0 0;
+    }
+
+    @include mq(lg) {
+        margin: px2Rem(13) 0 0 0;
+    }
+
     &__item {
         display: flex;
         list-style: none;
         gap: vw(4);
+
+        @include mq() {
+            gap: vwt(6);
+        }
+
+        @include mq(lg) {
+            gap: px2Rem(6);
+        }
     }
 
     &__item-special {
         margin-top: vw(4);
+
+        @include mq() {
+            margin-top: vwt(6);
+        }
+
+        @include mq(lg) {
+            margin-top: px2Rem(6);
+        }
     }
 }
 
@@ -948,12 +1003,14 @@ body {
         font-size: vwt(42);
         margin: vwt(10) 0 vwt(45) 0;
         letter-spacing: vwt(-.1);
+        gap: vwt(5);
     }
 
     @include mq(lg) {
         font-size: px2Rem(42);
         margin: px2Rem(10) 0 px2Rem(45) 0;
         letter-spacing: px2Rem(-.1);
+         gap: px2Rem(5);
 
 
     }
@@ -1009,11 +1066,17 @@ body {
         letter-spacing: vw(.6);
 
         @include mq() {
+            margin-left: vwt(4);
+            gap: vwt(4);
             font-size: vwt(18);
+            letter-spacing: vwt(0);
         }
 
         @include mq(lg) {
+            margin-left: px2Rem(4);
+            gap: px2Rem(4);
             font-size: px2Rem(18);
+            letter-spacing: px2Rem(0);
         }
     }
 
@@ -1079,7 +1142,7 @@ body {
 
         @include mq() {
             font-size: vwt(28);
-            padding: vwt(13) vwt(0);
+            padding: vwt(18) vwt(0) vwt(15) vwt(0);
             border-top-left-radius: vwt(10);
             border-top-right-radius: vwt(10);
             gap: vwt(20);
@@ -1087,7 +1150,7 @@ body {
 
         @include mq(lg) {
             font-size: px2Rem(28);
-            padding: px2Rem(13) px2Rem(0);
+            padding: px2Rem(18) px2Rem(0) px2Rem(15) px2Rem(0);
             border-top-left-radius: px2Rem(10);
             border-top-right-radius: px2Rem(10);
             gap: px2Rem(20);
@@ -1109,7 +1172,7 @@ body {
 
         @include mq() {
             margin-bottom: vwt(47);
-            padding: vwt(30) vwt(40) vwt(44) vwt(40);
+            padding: vwt(26) vwt(40) vwt(36) vwt(40);
             border-bottom-left-radius: vwt(10);
             border-bottom-right-radius: vwt(10);
 
@@ -1117,7 +1180,7 @@ body {
 
         @include mq(lg) {
             margin-bottom: px2Rem(47);
-            padding: px2Rem(30) px2Rem(40) px2Rem(44) px2Rem(40);
+            padding: px2Rem(26) px2Rem(40) px2Rem(36) px2Rem(40);
             border-bottom-left-radius: px2Rem(10);
             border-bottom-right-radius: px2Rem(10);
 
@@ -1127,6 +1190,14 @@ body {
     &__note-special {
         padding: vw(13.65) vw(7) vw(14) vw(7);
         margin-bottom: vw(32);
+        @include mq() {
+            padding: vwt(26) vwt(40) vwt(35) vwt(40);
+            margin-bottom: vwt(50);
+        }
+        @include mq(lg) {
+            padding: px2Rem(26) px2Rem(40) px2Rem(35) px2Rem(40);
+            margin-bottom: px2Rem(50);
+        }
     }
 
     &__description {
@@ -1168,13 +1239,13 @@ body {
             width: vwt(580);
             margin: 0 auto;
             align-items: center;
-            gap: vwt(35);
+            gap: vwt(37);
         }
 
         @include mq(lg) {
             width: px2Rem(580);
             max-width: px2Rem(250);
-            gap: px2Rem(35);
+            gap: px2Rem(37);
         }
     }
 
@@ -1212,13 +1283,13 @@ body {
             font-size: vwt(21);
             width: vwt(230);
             text-align: center;
-            margin: vwt(10) 0 0 vwt(5)
+            margin: vwt(15) 0 0 vwt(5)
         }
 
         @include mq(lg) {
             font-size: px2Rem(21);
             width: px2Rem(230);
-            margin: px2Rem(10) 0 0 px2Rem(5)
+            margin: px2Rem(15) 0 0 px2Rem(5)
         }
     }
 
@@ -1249,12 +1320,12 @@ body {
 
         @include mq() {
             font-size: vwt(24);
-            margin: vwt(50) vwt(0) vwt(30) vwt(0);
+            margin: vwt(58) vwt(0) vwt(20) vwt(0);
         }
 
         @include mq(lg) {
             font-size: px2Rem(24);
-            margin: px2Rem(50) px2Rem(0) px2Rem(30) px2Rem(0);
+            margin: px2Rem(58) px2Rem(0) px2Rem(20) px2Rem(0);
         }
     }
 
@@ -1265,6 +1336,15 @@ body {
         margin: 0;
         justify-content: space-between;
         row-gap: vw(16);
+        @include mq() {
+            padding:0;
+            gap: vwt(12);
+            justify-content:center;
+        }
+        @include mq(lg) {
+            padding:0;
+            gap:px2Rem(12);
+        }
     }
 
     &__list-item {
@@ -1272,11 +1352,11 @@ body {
         list-style: none;
 
         @include mq() {
-            width: vwt(105);
+            width: vwt(100);
         }
 
         @include mq(lg) {
-            width: px2Rem(105);
+            width: px2Rem(100);
         }
     }
 
@@ -1291,11 +1371,13 @@ body {
         @include mq() {
             width: vwt(100);
             font-size: vwt(14);
+             margin-top: vwt(5);
         }
 
         @include mq(lg) {
             width: px2Rem(100);
             font-size: px2Rem(14);
+             margin-top: px2Rem(5);
         }
     }
 
@@ -1334,14 +1416,15 @@ body {
         margin: 0 auto;
 
         @include mq() {
-            width: vwt(533);
+            width: vwt(560);
             height: vwt(601);
-            margin: 0 auto;
+            margin: 0 auto 0 vwt(80);
         }
 
         @include mq(lg) {
-            width: px2Rem(533);
+            width: px2Rem(560);
             height: px2Rem(601);
+             margin: 0 auto 0 px2Rem(80);
         }
     }
 
@@ -1390,7 +1473,7 @@ body {
 
         @include mq() {
             font-size: vwt(21);
-            padding: vwt(30) vwt(30) vwt(30) vwt(40);
+            padding: vwt(25) vwt(30) vwt(30) vwt(40);
             border-bottom-left-radius: vwt(10);
             border-bottom-right-radius: vwt(10);
             font-weight: 500;
@@ -1398,7 +1481,7 @@ body {
 
         @include mq(lg) {
             font-size: px2Rem(21);
-            padding: px2Rem(30) px2Rem(30) px2Rem(30) px2Rem(40);
+            padding: px2Rem(25) px2Rem(30) px2Rem(30) px2Rem(40);
             border-bottom-left-radius: px2Rem(10);
             border-bottom-right-radius: px2Rem(10);
         }
@@ -1410,12 +1493,12 @@ body {
 
     @include mq() {
         margin: vwt(5) 0 0 0;
-        padding: vwt(50) vwt(20) vwt(45) vwt(10);
+        padding: vwt(45) vwt(20) vwt(45) vwt(10);
     }
 
     @include mq(lg) {
         margin: px2Rem(5) 0 0 0;
-        padding: px2Rem(50) px2Rem(20) px2Rem(45) px2Rem(10);
+        padding: px2Rem(45) px2Rem(20) px2Rem(45) px2Rem(10);
     }
 }
 
@@ -1433,6 +1516,14 @@ body {
     margin: vw(5) 0 vw(20) vw(-10);
     letter-spacing: vw(1);
     font-family: Noto Sans JP;
+    @include mq() {
+        margin: vwt(10) 0 vwt(45) vwt(-10);
+        letter-spacing: vwt(1.2);
+    }
+    @include mq(lg) {
+        margin: px2Rem(10) 0 px2Rem(45) px2Rem(-10);
+        letter-spacing: px2Rem(1.2);
+    }
 }
 
 /*corse*/
@@ -1470,10 +1561,12 @@ body {
 
         @include mq() {
             font-size: vwt(24);
+            margin-left: vwt(9);
         }
 
         @include mq(lg) {
             font-size: px2Rem(24);
+            margin-left: px2Rem(9);
         }
     }
 

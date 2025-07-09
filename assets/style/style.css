@@ -46,6 +46,20 @@ body {
 .header__btn--left {
   margin-left: 1.2820512821vw;
 }
+@media screen and (min-width: 768px) {
+  .header__btn--left {
+    margin-left: 0.4854368932vw;
+    width: 1.1650485437vw;
+    height: 1.5533980583vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .header__btn--left {
+    margin-left: 0.3125rem;
+    width: 0.75rem;
+    height: 1rem;
+  }
+}
 .header__container {
   max-width: 94.6153846154vw;
   margin: 0 2.5641025641vw 0 auto;
@@ -240,6 +254,7 @@ body {
     background-size: 30.375rem;
     padding: 0rem 0rem 0rem 0rem;
     max-width: 60.875rem;
+    margin: 0 auto;
   }
 }
 .intro__title {
@@ -651,12 +666,12 @@ body {
 }
 @media screen and (min-width: 768px) {
   .btn {
-    padding: 4.854368932vw 1.9417475728vw 6.3106796117vw 0.9708737864vw;
+    padding: 4.854368932vw 1.9417475728vw 5.8252427184vw 0.9708737864vw;
   }
 }
 @media screen and (min-width: 1030px) {
   .btn {
-    padding: 3.125rem 1.25rem 4.0625rem 0.625rem;
+    padding: 3.125rem 1.25rem 3.75rem 0.625rem;
   }
 }
 .btn__container {
@@ -675,14 +690,14 @@ body {
   .btn__title {
     font-size: 3.3009708738vw;
     margin: 0 0 0.9708737864vw 1.4563106796vw;
-    letter-spacing: 0.4174757282vw;
+    letter-spacing: 0.1941747573vw;
   }
 }
 @media screen and (min-width: 1030px) {
   .btn__title {
     font-size: 2.125rem;
     margin: 0 0 0.625rem 0.9375rem;
-    letter-spacing: 0.26875rem;
+    letter-spacing: 0.125rem;
   }
 }
 .btn__link {
@@ -731,14 +746,14 @@ body {
   .btn__click {
     max-width: 33.0097087379vw;
     font-size: 3.3009708738vw;
-    letter-spacing: 0.1514563107vw;
+    letter-spacing: 0.3398058252vw;
   }
 }
 @media screen and (min-width: 1030px) {
   .btn__click {
     max-width: 21.25rem;
     font-size: 2.125rem;
-    letter-spacing: 0.0975rem;
+    letter-spacing: 0.21875rem;
   }
 }
 .btn__arrow {
@@ -772,14 +787,14 @@ body {
 }
 @media screen and (min-width: 768px) {
   .btn__wrapper {
-    width: 54.4660194175vw;
+    width: 54.854368932vw;
     max-width: 84.9514563107vw;
     padding: 4.854368932vw 0 0 0;
   }
 }
 @media screen and (min-width: 1030px) {
   .btn__wrapper {
-    width: 35.0625rem;
+    width: 35.3125rem;
     max-width: 54.6875rem;
     padding: 3.125rem 0 0 0;
   }
@@ -830,9 +845,31 @@ body {
   font-size: 3.5897435897vw;
   font-weight: 500;
 }
+@media screen and (min-width: 768px) {
+  .btn__label {
+    width: 12.427184466vw;
+    font-size: 2.2194174757vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .btn__label {
+    width: 8rem;
+    font-size: 1.42875rem;
+  }
+}
 .btn__content {
   font-size: 3.5897435897vw;
   font-weight: 500;
+}
+@media screen and (min-width: 768px) {
+  .btn__content {
+    font-size: 2.213592233vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .btn__content {
+    font-size: 1.425rem;
+  }
 }
 .btn__detail {
   display: flex;
@@ -898,13 +935,43 @@ body {
   padding: 0;
   margin: 2.5641025641vw 0 0 1.0256410256vw;
 }
+@media screen and (min-width: 768px) {
+  .trial-list {
+    margin: 1.2621359223vw 0 0 0;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .trial-list {
+    margin: 0.8125rem 0 0 0;
+  }
+}
 .trial-list__item {
   display: flex;
   list-style: none;
   gap: 1.0256410256vw;
 }
+@media screen and (min-width: 768px) {
+  .trial-list__item {
+    gap: 0.5825242718vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .trial-list__item {
+    gap: 0.375rem;
+  }
+}
 .trial-list__item-special {
   margin-top: 1.0256410256vw;
+}
+@media screen and (min-width: 768px) {
+  .trial-list__item-special {
+    margin-top: 0.5825242718vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .trial-list__item-special {
+    margin-top: 0.375rem;
+  }
 }
 
 .section__main {
@@ -921,6 +988,7 @@ body {
     font-size: 4.0776699029vw;
     margin: 0.9708737864vw 0 4.3689320388vw 0;
     letter-spacing: -0.0097087379vw;
+    gap: 0.4854368932vw;
   }
 }
 @media screen and (min-width: 1030px) {
@@ -928,6 +996,7 @@ body {
     font-size: 2.625rem;
     margin: 0.625rem 0 2.8125rem 0;
     letter-spacing: -0.00625rem;
+    gap: 0.3125rem;
   }
 }
 
@@ -987,12 +1056,18 @@ body {
 }
 @media screen and (min-width: 768px) {
   .point__heading {
+    margin-left: 0.3883495146vw;
+    gap: 0.3883495146vw;
     font-size: 1.7475728155vw;
+    letter-spacing: 0vw;
   }
 }
 @media screen and (min-width: 1030px) {
   .point__heading {
+    margin-left: 0.25rem;
+    gap: 0.25rem;
     font-size: 1.125rem;
+    letter-spacing: 0rem;
   }
 }
 .point__img01 {
@@ -1057,7 +1132,7 @@ body {
 @media screen and (min-width: 768px) {
   .point__title {
     font-size: 2.7184466019vw;
-    padding: 1.2621359223vw 0vw;
+    padding: 1.7475728155vw 0vw 1.4563106796vw 0vw;
     border-top-left-radius: 0.9708737864vw;
     border-top-right-radius: 0.9708737864vw;
     gap: 1.9417475728vw;
@@ -1066,7 +1141,7 @@ body {
 @media screen and (min-width: 1030px) {
   .point__title {
     font-size: 1.75rem;
-    padding: 0.8125rem 0rem;
+    padding: 1.125rem 0rem 0.9375rem 0rem;
     border-top-left-radius: 0.625rem;
     border-top-right-radius: 0.625rem;
     gap: 1.25rem;
@@ -1086,7 +1161,7 @@ body {
 @media screen and (min-width: 768px) {
   .point__note {
     margin-bottom: 4.5631067961vw;
-    padding: 2.9126213592vw 3.8834951456vw 4.2718446602vw 3.8834951456vw;
+    padding: 2.5242718447vw 3.8834951456vw 3.4951456311vw 3.8834951456vw;
     border-bottom-left-radius: 0.9708737864vw;
     border-bottom-right-radius: 0.9708737864vw;
   }
@@ -1094,7 +1169,7 @@ body {
 @media screen and (min-width: 1030px) {
   .point__note {
     margin-bottom: 2.9375rem;
-    padding: 1.875rem 2.5rem 2.75rem 2.5rem;
+    padding: 1.625rem 2.5rem 2.25rem 2.5rem;
     border-bottom-left-radius: 0.625rem;
     border-bottom-right-radius: 0.625rem;
   }
@@ -1102,6 +1177,18 @@ body {
 .point__note-special {
   padding: 3.5vw 1.7948717949vw 3.5897435897vw 1.7948717949vw;
   margin-bottom: 8.2051282051vw;
+}
+@media screen and (min-width: 768px) {
+  .point__note-special {
+    padding: 2.5242718447vw 3.8834951456vw 3.3980582524vw 3.8834951456vw;
+    margin-bottom: 4.854368932vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .point__note-special {
+    padding: 1.625rem 2.5rem 2.1875rem 2.5rem;
+    margin-bottom: 3.125rem;
+  }
 }
 .point__description {
   background-color: #fff;
@@ -1141,14 +1228,14 @@ body {
     width: 56.3106796117vw;
     margin: 0 auto;
     align-items: center;
-    gap: 3.3980582524vw;
+    gap: 3.5922330097vw;
   }
 }
 @media screen and (min-width: 1030px) {
   .point__flex {
     width: 36.25rem;
     max-width: 15.625rem;
-    gap: 2.1875rem;
+    gap: 2.3125rem;
   }
 }
 .point__figure {
@@ -1187,14 +1274,14 @@ body {
     font-size: 2.0388349515vw;
     width: 22.3300970874vw;
     text-align: center;
-    margin: 0.9708737864vw 0 0 0.4854368932vw;
+    margin: 1.4563106796vw 0 0 0.4854368932vw;
   }
 }
 @media screen and (min-width: 1030px) {
   .point__txt {
     font-size: 1.3125rem;
     width: 14.375rem;
-    margin: 0.625rem 0 0 0.3125rem;
+    margin: 0.9375rem 0 0 0.3125rem;
   }
 }
 .point__subtitle {
@@ -1224,13 +1311,13 @@ body {
 @media screen and (min-width: 768px) {
   .point__subtitle-txt {
     font-size: 2.3300970874vw;
-    margin: 4.854368932vw 0vw 2.9126213592vw 0vw;
+    margin: 5.6310679612vw 0vw 1.9417475728vw 0vw;
   }
 }
 @media screen and (min-width: 1030px) {
   .point__subtitle-txt {
     font-size: 1.5rem;
-    margin: 3.125rem 0rem 1.875rem 0rem;
+    margin: 3.625rem 0rem 1.25rem 0rem;
   }
 }
 .point__list {
@@ -1241,18 +1328,31 @@ body {
   justify-content: space-between;
   row-gap: 4.1025641026vw;
 }
+@media screen and (min-width: 768px) {
+  .point__list {
+    padding: 0;
+    gap: 1.1650485437vw;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .point__list {
+    padding: 0;
+    gap: 0.75rem;
+  }
+}
 .point__list-item {
   width: 25.641025641vw;
   list-style: none;
 }
 @media screen and (min-width: 768px) {
   .point__list-item {
-    width: 10.1941747573vw;
+    width: 9.7087378641vw;
   }
 }
 @media screen and (min-width: 1030px) {
   .point__list-item {
-    width: 6.5625rem;
+    width: 6.25rem;
   }
 }
 .point__figcaption {
@@ -1267,12 +1367,14 @@ body {
   .point__figcaption {
     width: 9.7087378641vw;
     font-size: 1.359223301vw;
+    margin-top: 0.4854368932vw;
   }
 }
 @media screen and (min-width: 1030px) {
   .point__figcaption {
     width: 6.25rem;
     font-size: 0.875rem;
+    margin-top: 0.3125rem;
   }
 }
 .point__img {
@@ -1313,15 +1415,16 @@ body {
 }
 @media screen and (min-width: 768px) {
   .point__img04 {
-    width: 51.7475728155vw;
+    width: 54.3689320388vw;
     height: 58.3495145631vw;
-    margin: 0 auto;
+    margin: 0 auto 0 7.7669902913vw;
   }
 }
 @media screen and (min-width: 1030px) {
   .point__img04 {
-    width: 33.3125rem;
+    width: 35rem;
     height: 37.5625rem;
+    margin: 0 auto 0 5rem;
   }
 }
 .point__imgs {
@@ -1372,7 +1475,7 @@ body {
 @media screen and (min-width: 768px) {
   .point__descriptions {
     font-size: 2.0388349515vw;
-    padding: 2.9126213592vw 2.9126213592vw 2.9126213592vw 3.8834951456vw;
+    padding: 2.427184466vw 2.9126213592vw 2.9126213592vw 3.8834951456vw;
     border-bottom-left-radius: 0.9708737864vw;
     border-bottom-right-radius: 0.9708737864vw;
     font-weight: 500;
@@ -1381,7 +1484,7 @@ body {
 @media screen and (min-width: 1030px) {
   .point__descriptions {
     font-size: 1.3125rem;
-    padding: 1.875rem 1.875rem 1.875rem 2.5rem;
+    padding: 1.5625rem 1.875rem 1.875rem 2.5rem;
     border-bottom-left-radius: 0.625rem;
     border-bottom-right-radius: 0.625rem;
   }
@@ -1393,13 +1496,13 @@ body {
 @media screen and (min-width: 768px) {
   .btn--two {
     margin: 0.4854368932vw 0 0 0;
-    padding: 4.854368932vw 1.9417475728vw 4.3689320388vw 0.9708737864vw;
+    padding: 4.3689320388vw 1.9417475728vw 4.3689320388vw 0.9708737864vw;
   }
 }
 @media screen and (min-width: 1030px) {
   .btn--two {
     margin: 0.3125rem 0 0 0;
-    padding: 3.125rem 1.25rem 2.8125rem 0.625rem;
+    padding: 2.8125rem 1.25rem 2.8125rem 0.625rem;
   }
 }
 
@@ -1418,6 +1521,18 @@ body {
   margin: 1.2820512821vw 0 5.1282051282vw -2.5641025641vw;
   letter-spacing: 0.2564102564vw;
   font-family: Noto Sans JP;
+}
+@media screen and (min-width: 768px) {
+  .section__main-special {
+    margin: 0.9708737864vw 0 4.3689320388vw -0.9708737864vw;
+    letter-spacing: 0.1165048544vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .section__main-special {
+    margin: 0.625rem 0 2.8125rem -0.625rem;
+    letter-spacing: 0.075rem;
+  }
 }
 
 /*corse*/
@@ -1459,11 +1574,13 @@ body {
 @media screen and (min-width: 768px) {
   .course__heading02 {
     font-size: 2.3300970874vw;
+    margin-left: 0.8737864078vw;
   }
 }
 @media screen and (min-width: 1030px) {
   .course__heading02 {
     font-size: 1.5rem;
+    margin-left: 0.5625rem;
   }
 }
 .course__title {
