@@ -111,13 +111,13 @@ body {
 
 
         @include mq() {
-            margin-left: vwt(5);
+            margin-left: vwt(0);
             width: vwt(12);
             height: vwt(16);
         }
 
         @include mq(lg) {
-            margin-left: px2Rem(5);
+            margin-left: px2Rem(0);
             width: px2Rem(12);
             height: px2Rem(16);
         }
@@ -218,6 +218,7 @@ body {
             height: vwt(55);
             font-size: vwt(20);
             border-radius: vwt(25.18);
+             padding-left: 0;
         }
 
         @include mq(lg) {
@@ -225,6 +226,7 @@ body {
             height: px2Rem(50);
             font-size: px2Rem(20);
             border-radius: px2Rem(25.18);
+             padding-left: 0;
         }
     }
 
@@ -234,12 +236,12 @@ body {
 
         @include mq() {
             font-size: vwt(17);
-            width: vwt(60);
+            width: vwt(52);
         }
 
         @include mq(lg) {
             font-size: px2Rem(17);
-            width: px2Rem(60);
+            width: px2Rem(52);
 
         }
     }
@@ -710,14 +712,14 @@ body {
 
         @include mq() {
             font-size: vwt(34);
-            margin: 0 0 vwt(10) vwt(15);
-            letter-spacing: vwt(2);
+            margin: 0 0 vwt(11) vwt(20);
+            letter-spacing: vwt(4);
         }
 
         @include mq(lg) {
             font-size: px2Rem(34);
-            margin: 0 0 px2Rem(10) px2Rem(15);
-            letter-spacing: px2Rem(2);
+            margin: 0 0 px2Rem(11) px2Rem(20);
+            letter-spacing: px2Rem(4);
         }
     }
 
@@ -768,12 +770,14 @@ body {
             max-width: vwt(340);
             font-size: vwt(34);
             letter-spacing: vwt(3.5);
+            padding-left: vwt(2.5);
         }
 
         @include mq(lg) {
             max-width: px2Rem(340);
             font-size: px2Rem(34);
             letter-spacing: px2Rem(3.5);
+            padding-left: px2Rem(2.5);
         }
     }
 
@@ -1010,7 +1014,7 @@ body {
         font-size: px2Rem(42);
         margin: px2Rem(10) 0 px2Rem(45) 0;
         letter-spacing: px2Rem(-.1);
-         gap: px2Rem(5);
+        gap: px2Rem(5);
 
 
     }
@@ -1142,7 +1146,7 @@ body {
 
         @include mq() {
             font-size: vwt(28);
-            padding: vwt(18) vwt(0) vwt(15) vwt(0);
+            padding: vwt(17) vwt(0) vwt(15) vwt(0);
             border-top-left-radius: vwt(10);
             border-top-right-radius: vwt(10);
             gap: vwt(20);
@@ -1150,7 +1154,7 @@ body {
 
         @include mq(lg) {
             font-size: px2Rem(28);
-            padding: px2Rem(18) px2Rem(0) px2Rem(15) px2Rem(0);
+            padding: px2Rem(17) px2Rem(0) px2Rem(15) px2Rem(0);
             border-top-left-radius: px2Rem(10);
             border-top-right-radius: px2Rem(10);
             gap: px2Rem(20);
@@ -1190,12 +1194,14 @@ body {
     &__note-special {
         padding: vw(13.65) vw(7) vw(14) vw(7);
         margin-bottom: vw(32);
+
         @include mq() {
-            padding: vwt(26) vwt(40) vwt(35) vwt(40);
+            padding: vwt(26) vwt(40) vwt(32) vwt(40);
             margin-bottom: vwt(50);
         }
+
         @include mq(lg) {
-            padding: px2Rem(26) px2Rem(40) px2Rem(35) px2Rem(40);
+            padding: px2Rem(26) px2Rem(40) px2Rem(32) px2Rem(40);
             margin-bottom: px2Rem(50);
         }
     }
@@ -1211,14 +1217,14 @@ body {
 
         @include mq() {
             font-size: vwt(21);
-            margin: vwt(0) vwt(0) vwt(20) vwt(0);
+            margin: vwt(0) vwt(0) vwt(22) vwt(0);
             font-weight: 500;
             letter-spacing: vwt(-0.0039);
         }
 
         @include mq(lg) {
             font-size: px2Rem(21);
-            margin: px2Rem(0) px2Rem(0) px2Rem(20) px2Rem(0);
+            margin: px2Rem(0) px2Rem(0) px2Rem(22) px2Rem(0);
             letter-spacing: px2Rem(-0.0039);
         }
     }
@@ -1293,6 +1299,16 @@ body {
         }
     }
 
+    &__txt-special {
+        @include mq() {
+            margin: vwt(10) 0 0 vwt(0)
+        }
+
+        @include mq(lg) {
+            margin: vwt(10) 0 0 vwt(0)
+        }
+    }
+
 
 
     &__subtitle {
@@ -1336,14 +1352,16 @@ body {
         margin: 0;
         justify-content: space-between;
         row-gap: vw(16);
+
         @include mq() {
-            padding:0;
+            padding: 0;
             gap: vwt(12);
-            justify-content:center;
+            justify-content: center;
         }
+
         @include mq(lg) {
-            padding:0;
-            gap:px2Rem(12);
+            padding: 0;
+            gap: px2Rem(12);
         }
     }
 
@@ -1371,13 +1389,13 @@ body {
         @include mq() {
             width: vwt(100);
             font-size: vwt(14);
-             margin-top: vwt(5);
+            margin-top: vwt(5);
         }
 
         @include mq(lg) {
             width: px2Rem(100);
             font-size: px2Rem(14);
-             margin-top: px2Rem(5);
+            margin-top: px2Rem(5);
         }
     }
 
@@ -1424,7 +1442,7 @@ body {
         @include mq(lg) {
             width: px2Rem(560);
             height: px2Rem(601);
-             margin: 0 auto 0 px2Rem(80);
+            margin: 0 auto 0 px2Rem(80);
         }
     }
 
@@ -1516,13 +1534,15 @@ body {
     margin: vw(5) 0 vw(20) vw(-10);
     letter-spacing: vw(1);
     font-family: Noto Sans JP;
+
     @include mq() {
-        margin: vwt(10) 0 vwt(45) vwt(-10);
-        letter-spacing: vwt(1.2);
+        margin: vwt(10) 0 vwt(35) vwt(-10);
+        letter-spacing: vwt(0.1);
     }
+
     @include mq(lg) {
-        margin: px2Rem(10) 0 px2Rem(45) px2Rem(-10);
-        letter-spacing: px2Rem(1.2);
+        margin: px2Rem(10) 0 px2Rem(35) px2Rem(-10);
+        letter-spacing: px2Rem(0.1);
     }
 }
 
@@ -1531,11 +1551,11 @@ body {
     padding: vw(20) vw(20) vw(15.6) vw(20);
 
     @include mq() {
-        padding: vwt(10) vwt(20) vwt(20) vwt(20);
+        padding: vwt(10) vwt(20) vwt(30) vwt(20);
     }
 
     @include mq(lg) {
-        padding: px2Rem(10) px2Rem(20) px2Rem(20) px2Rem(20);
+        padding: px2Rem(10) px2Rem(20) px2Rem(30) px2Rem(20);
     }
 
     &__container {
@@ -1655,11 +1675,12 @@ body {
     &__boxes {
 
         @include mq() {
-            padding: vwt(13) vwt(5.77777777777) vwt(10) vwt(8);
+            padding: vwt(13) vwt(0) vwt(10) vwt(8);
+            text-align: justify;
         }
 
         @include mq(lg) {
-            padding: px2Rem(13) px2Rem(5.7777777777) px2Rem(10) px2Rem(8);
+            padding: px2Rem(13) px2Rem(0) px2Rem(10) px2Rem(8);
         }
     }
 
@@ -1688,13 +1709,27 @@ body {
 
         @include mq() {
             font-size: vwt(18);
-            margin: 0 0 vwt(9) vwt(12);
+            margin: 0 0 vwt(11) vwt(12);
         }
 
         @include mq(lg) {
             font-size: px2Rem(18);
-            margin: 0 0 px2Rem(9) px2Rem(12);
+            margin: 0 0 px2Rem(11) px2Rem(12);
         }
+    }
+}
+
+.next {
+    display: none;
+
+    @include mq() {
+        display: block;
+
+    }
+
+    @include mq(lg) {
+        display: block;
+
     }
 }
 
@@ -1704,12 +1739,12 @@ body {
 
     @include mq() {
         gap: vwt(21);
-        margin: vwt(39.7) 0 vwt(27) 0;
+        margin: vwt(30) 0 vwt(30) 0;
     }
 
     @include mq(lg) {
         gap: px2Rem(21);
-        margin: px2Rem(39.7) 0 px2Rem(27) 0;
+        margin: px2Rem(30) 0 px2Rem(30) 0;
     }
 }
 
@@ -1775,13 +1810,13 @@ body {
         @include mq() {
             padding: vwt(10) vwt(20);
             border-radius: 0 0 vwt(10) vwt(10);
-            gap: vwt(10);
+            gap: vwt(0);
         }
 
         @include mq(lg) {
             padding: px2Rem(10) px2Rem(20);
             border-radius: 0 0 px2Rem(10) px2Rem(10);
-            gap: px2Rem(10);
+            gap: px2Rem(0);
         }
     }
 
@@ -1936,11 +1971,11 @@ body {
     padding: vw(27) vw(10) vw(42) vw(10);
 
     @include mq() {
-        padding: vwt(53) vwt(10) vwt(70) vwt(10);
+        padding: vwt(53) vwt(10) vwt(65) vwt(10);
     }
 
     @include mq(lg) {
-        padding: px2Rem(53) px2Rem(10) px2Rem(70) px2Rem(10);
+        padding: px2Rem(53) px2Rem(10) px2Rem(65) px2Rem(10);
     }
 }
 
